@@ -4,11 +4,11 @@ seed(1)
 # This is an example puython programme which shows how to use the different stand-alone versions of OWL reasoners and forgetting programme
 
 # Choose the ontology (in the OWL format) for which you want to explain the entailed subsumption relations.
-inputOntology = "datasets/pizza_super_simple.owl"
+inputOntology = "./pizza_super_simple.owl"
 
 # Choose the set of subclass for which you want to find an explanation.
 # this file can be generated using the second command (saveAllSubClasses)
-inputSubclassStatements = "datasets/subClasses.nt"
+inputSubclassStatements = "./subClasses.nt"
 
 # Choose the ontology to which you want to apply forgetting. This can be the inputOntology, but in practise
 # should be a smaller ontology, e.g. created as a justification for a subsumption
@@ -22,7 +22,7 @@ forgetOntology = "./result.owl"
 method = "1	" #
 
 # Choose the symbols which you want to forget.
-signature = "datasets/signature.txt"
+signature = "./signature.txt"
 
 # 1. PRINT ALL SUBCLASSES (inputOntology):
 # print all subClass statements (explicit and inferred) in the inputOntology
@@ -51,7 +51,7 @@ os.system('java -jar kr_functions.jar ' + 'saveAllSubClasses' + " " + inputOntol
 
 elements = []
 
-with open("datasets/subClasses.nt", "r") as file:
+with open("subClasses.nt", "r") as file:
 	for line in file:
 		words = line.split()
 		if(words[0][1:-1] not in elements):
@@ -63,19 +63,25 @@ print(elements)
 
 to_forget = []
 
-for x in range(5):
+for x in range(4):
 	tmp = randint(0,len(elements)-1)
 	to_forget.append(elements[tmp])
 	elements.pop(tmp)
 
-f = open('datasets/signature.txt','w')
-f.close()
+first = 0
 
-with open("datasets/signature.txt", "a") as f:
-	for t in to_forget:
-		f.write(f'{t}\n')
+for t in to_forget:
+	with open("signature.txt", "w") as f:
+		f.write(t)
+	if(first == 0):
+		os.system('java -cp lethe-standalone.jar uk.ac.man.cs.lethe.internal.application.ForgettingConsoleApplication --owlFile ' + inputOntology + ' --method ' + method  + ' --signature ' + signature)
+		first+=1
+	else:
+		os.system('java -cp lethe-standalone.jar uk.ac.man.cs.lethe.internal.application.ForgettingConsoleApplication --owlFile ' + forgetOntology + ' --method ' + method  + ' --signature ' + signature)
 
-os.system('java -cp lethe-standalone.jar uk.ac.man.cs.lethe.internal.application.ForgettingConsoleApplication --owlFile ' + forgetOntology + ' --method ' + method  + ' --signature ' + signature)
 
-os.system('java -jar kr_functions.jar ' + 'saveAllSubClasses' + " " + forgetOntology)
+# os.system('java -jar kr_functions.jar ' + 'saveAllSubClasses' + " " + forgetOntology)
 os.system('java -jar kr_functions.jar ' + 'saveAllExplanations' + " " + forgetOntology + " " + inputSubclassStatements)
+
+
+print(elements)

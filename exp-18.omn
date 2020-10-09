@@ -1,0 +1,4 @@
+Ontology(<http://www.example.com/explanation18>
+SubClassOf(ObjectIntersectionOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#CheeseTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#PizzaTopping>) <http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetarianTopping>)
+SubClassOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#CheeseTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#PizzaTopping>)
+)

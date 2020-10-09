@@ -1,5 +1,0 @@
-http://www.co-ode.org/ontologies/pizza/pizza.owl#Food
-http://www.co-ode.org/ontologies/pizza/pizza.owl#CajunSpiceTopping
-http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetableTopping
-http://www.co-ode.org/ontologies/pizza/pizza.owl#NamedPizza
-http://www.co-ode.org/ontologies/pizza/pizza.owl#Capricciosa
