@@ -1,0 +1,354 @@
+Starting Program...
+--------------------
+Loading ontology located at: datasets/pizza_super_simple.owl
+DONE! Loading ontology located at: datasets/pizza_super_simple.owl
+Format : RDF/XML Syntax
+--------
+
+
+Printing all subClassOf statements to console
+
+
+<http://www.co-ode.org/ontologies/pizza/pizza.owl#CheeseTopping> rdfs:subClassOf <http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetarianTopping>
+<http://www.co-ode.org/ontologies/pizza/pizza.owl#CheeseTopping> rdfs:subClassOf <http://www.co-ode.org/ontologies/pizza/pizza.owl#PizzaTopping>
+<http://www.co-ode.org/ontologies/pizza/pizza.owl#American> rdfs:subClassOf <http://www.co-ode.org/ontologies/pizza/pizza.owl#NamedPizza>
+<http://www.co-ode.org/ontologies/pizza/pizza.owl#American> rdfs:subClassOf <http://www.co-ode.org/ontologies/pizza/pizza.owl#Food>
+<http://www.co-ode.org/ontologies/pizza/pizza.owl#American> rdfs:subClassOf <http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza>
+<http://www.co-ode.org/ontologies/pizza/pizza.owl#Cajun> rdfs:subClassOf <http://www.co-ode.org/ontologies/pizza/pizza.owl#NamedPizza>
+<http://www.co-ode.org/ontologies/pizza/pizza.owl#Cajun> rdfs:subClassOf <http://www.co-ode.org/ontologies/pizza/pizza.owl#Food>
+<http://www.co-ode.org/ontologies/pizza/pizza.owl#Cajun> rdfs:subClassOf <http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza>
+<http://www.co-ode.org/ontologies/pizza/pizza.owl#CajunSpiceTopping> rdfs:subClassOf <http://www.co-ode.org/ontologies/pizza/pizza.owl#HerbSpiceTopping>
+<http://www.co-ode.org/ontologies/pizza/pizza.owl#Capricciosa> rdfs:subClassOf <http://www.co-ode.org/ontologies/pizza/pizza.owl#NamedPizza>
+<http://www.co-ode.org/ontologies/pizza/pizza.owl#Capricciosa> rdfs:subClassOf <http://www.co-ode.org/ontologies/pizza/pizza.owl#Food>
+<http://www.co-ode.org/ontologies/pizza/pizza.owl#Capricciosa> rdfs:subClassOf <http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza>
+<http://www.co-ode.org/ontologies/pizza/pizza.owl#CaperTopping> rdfs:subClassOf <http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetableTopping>
+<http://www.co-ode.org/ontologies/pizza/pizza.owl#Veneziana> rdfs:subClassOf <http://www.co-ode.org/ontologies/pizza/pizza.owl#NamedPizza>
+<http://www.co-ode.org/ontologies/pizza/pizza.owl#Veneziana> rdfs:subClassOf <http://www.co-ode.org/ontologies/pizza/pizza.owl#Food>
+<http://www.co-ode.org/ontologies/pizza/pizza.owl#Veneziana> rdfs:subClassOf <http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza>
+<http://www.co-ode.org/ontologies/pizza/pizza.owl#Caprina> rdfs:subClassOf <http://www.co-ode.org/ontologies/pizza/pizza.owl#NamedPizza>
+<http://www.co-ode.org/ontologies/pizza/pizza.owl#Caprina> rdfs:subClassOf <http://www.co-ode.org/ontologies/pizza/pizza.owl#Food>
+<http://www.co-ode.org/ontologies/pizza/pizza.owl#Caprina> rdfs:subClassOf <http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza>
+
+
+DONE! Printing all subClassOf statements to console
+--------
+
+
+Starting Program...
+--------------------
+Loading ontology located at: datasets/pizza_super_simple.owl
+DONE! Loading ontology located at: datasets/pizza_super_simple.owl
+Format : RDF/XML Syntax
+--------
+
+
+Saving all subClassOf statements to following file: /mnt/c/Users/Paluc/Desktop/git/kr_project2_explanation_by_forgetting/datasets/subClasses.nt
+
+
+DONE! Saving all subClassOf statements to following file: /mnt/c/Users/Paluc/Desktop/git/kr_project2_explanation_by_forgetting/datasets/subClasses.nt
+--------
+
+
+Starting Program...
+--------------------
+Loading ontology located at: datasets/pizza_super_simple.owl
+DONE! Loading ontology located at: datasets/pizza_super_simple.owl
+Format : RDF/XML Syntax
+--------
+
+
+Loading ontology located at: datasets/subClasses.nt
+DONE! Loading ontology located at: datasets/subClasses.nt
+Format : Turtle Syntax
+--------
+
+
+Saving all explanations for the subsumptions located at: datasets/subClasses.nt
+
+
+
+Computing explanation for: <http://www.co-ode.org/ontologies/pizza/pizza.owl#Veneziana> rdfs:subClassOf <http://www.co-ode.org/ontologies/pizza/pizza.owl#NamedPizza>
+-> Explanation #1
+	 Axiom 1. SubClassOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#Veneziana> <http://www.co-ode.org/ontologies/pizza/pizza.owl#NamedPizza>)
+
+Computing explanation for: <http://www.co-ode.org/ontologies/pizza/pizza.owl#Caprina> rdfs:subClassOf <http://www.co-ode.org/ontologies/pizza/pizza.owl#Food>
+-> Explanation #2
+	 Axiom 1. ObjectPropertyDomain(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient> <http://www.co-ode.org/ontologies/pizza/pizza.owl#Food>)
+	 Axiom 2. SubClassOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#Caprina> ObjectSomeValuesFrom(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#SundriedTomatoTopping>))
+	 Axiom 3. SubObjectPropertyOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient>)
+-> Explanation #2
+	 Axiom 1. ObjectPropertyDomain(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient> <http://www.co-ode.org/ontologies/pizza/pizza.owl#Food>)
+	 Axiom 2. SubObjectPropertyOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient>)
+	 Axiom 3. SubClassOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#Caprina> ObjectSomeValuesFrom(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#TomatoTopping>))
+-> Explanation #2
+	 Axiom 1. SubClassOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#Caprina> ObjectSomeValuesFrom(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#GoatsCheeseTopping>))
+	 Axiom 2. ObjectPropertyDomain(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient> <http://www.co-ode.org/ontologies/pizza/pizza.owl#Food>)
+	 Axiom 3. SubObjectPropertyOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient>)
+-> Explanation #2
+	 Axiom 1. SubClassOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#Caprina> ObjectSomeValuesFrom(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#MozzarellaTopping>))
+	 Axiom 2. ObjectPropertyDomain(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient> <http://www.co-ode.org/ontologies/pizza/pizza.owl#Food>)
+	 Axiom 3. SubObjectPropertyOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient>)
+
+Computing explanation for: <http://www.co-ode.org/ontologies/pizza/pizza.owl#CheeseTopping> rdfs:subClassOf <http://www.co-ode.org/ontologies/pizza/pizza.owl#PizzaTopping>
+-> Explanation #3
+	 Axiom 1. SubClassOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#CheeseTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#PizzaTopping>)
+
+Computing explanation for: <http://www.co-ode.org/ontologies/pizza/pizza.owl#Cajun> rdfs:subClassOf <http://www.co-ode.org/ontologies/pizza/pizza.owl#NamedPizza>
+-> Explanation #4
+	 Axiom 1. SubClassOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#Cajun> <http://www.co-ode.org/ontologies/pizza/pizza.owl#NamedPizza>)
+
+Computing explanation for: <http://www.co-ode.org/ontologies/pizza/pizza.owl#CajunSpiceTopping> rdfs:subClassOf <http://www.co-ode.org/ontologies/pizza/pizza.owl#HerbSpiceTopping>
+-> Explanation #5
+	 Axiom 1. SubClassOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#CajunSpiceTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#HerbSpiceTopping>)
+
+Computing explanation for: <http://www.co-ode.org/ontologies/pizza/pizza.owl#American> rdfs:subClassOf <http://www.co-ode.org/ontologies/pizza/pizza.owl#NamedPizza>
+-> Explanation #6
+	 Axiom 1. SubClassOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#American> <http://www.co-ode.org/ontologies/pizza/pizza.owl#NamedPizza>)
+
+Computing explanation for: <http://www.co-ode.org/ontologies/pizza/pizza.owl#American> rdfs:subClassOf <http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza>
+-> Explanation #7
+	 Axiom 1. ObjectPropertyDomain(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza>)
+	 Axiom 2. SubClassOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#American> ObjectSomeValuesFrom(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#TomatoTopping>))
+-> Explanation #7
+	 Axiom 1. SubClassOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#American> ObjectSomeValuesFrom(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#MozzarellaTopping>))
+	 Axiom 2. ObjectPropertyDomain(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza>)
+-> Explanation #7
+	 Axiom 1. SubClassOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#American> ObjectSomeValuesFrom(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#PeperoniSausageTopping>))
+	 Axiom 2. ObjectPropertyDomain(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza>)
+
+Computing explanation for: <http://www.co-ode.org/ontologies/pizza/pizza.owl#Veneziana> rdfs:subClassOf <http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza>
+-> Explanation #8
+	 Axiom 1. SubClassOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#Veneziana> ObjectSomeValuesFrom(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#MozzarellaTopping>))
+	 Axiom 2. ObjectPropertyDomain(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza>)
+-> Explanation #8
+	 Axiom 1. SubClassOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#Veneziana> ObjectSomeValuesFrom(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#OnionTopping>))
+	 Axiom 2. ObjectPropertyDomain(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza>)
+-> Explanation #8
+	 Axiom 1. SubClassOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#Veneziana> ObjectSomeValuesFrom(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#CaperTopping>))
+	 Axiom 2. ObjectPropertyDomain(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza>)
+-> Explanation #8
+	 Axiom 1. ObjectPropertyDomain(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza>)
+	 Axiom 2. SubClassOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#Veneziana> ObjectSomeValuesFrom(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#TomatoTopping>))
+-> Explanation #8
+	 Axiom 1. SubClassOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#Veneziana> ObjectSomeValuesFrom(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#OliveTopping>))
+	 Axiom 2. ObjectPropertyDomain(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza>)
+-> Explanation #8
+	 Axiom 1. SubClassOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#Veneziana> ObjectSomeValuesFrom(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#SultanaTopping>))
+	 Axiom 2. ObjectPropertyDomain(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza>)
+-> Explanation #8
+	 Axiom 1. SubClassOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#Veneziana> ObjectSomeValuesFrom(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#PineKernels>))
+	 Axiom 2. ObjectPropertyDomain(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza>)
+
+Computing explanation for: <http://www.co-ode.org/ontologies/pizza/pizza.owl#Caprina> rdfs:subClassOf <http://www.co-ode.org/ontologies/pizza/pizza.owl#NamedPizza>
+-> Explanation #9
+	 Axiom 1. SubClassOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#Caprina> <http://www.co-ode.org/ontologies/pizza/pizza.owl#NamedPizza>)
+
+Computing explanation for: <http://www.co-ode.org/ontologies/pizza/pizza.owl#Veneziana> rdfs:subClassOf <http://www.co-ode.org/ontologies/pizza/pizza.owl#Food>
+-> Explanation #10
+	 Axiom 1. SubClassOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#Veneziana> ObjectSomeValuesFrom(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#MozzarellaTopping>))
+	 Axiom 2. ObjectPropertyDomain(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient> <http://www.co-ode.org/ontologies/pizza/pizza.owl#Food>)
+	 Axiom 3. SubObjectPropertyOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient>)
+-> Explanation #10
+	 Axiom 1. ObjectPropertyDomain(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient> <http://www.co-ode.org/ontologies/pizza/pizza.owl#Food>)
+	 Axiom 2. SubClassOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#Veneziana> ObjectSomeValuesFrom(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#OnionTopping>))
+	 Axiom 3. SubObjectPropertyOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient>)
+-> Explanation #10
+	 Axiom 1. SubClassOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#Veneziana> ObjectSomeValuesFrom(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#CaperTopping>))
+	 Axiom 2. ObjectPropertyDomain(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient> <http://www.co-ode.org/ontologies/pizza/pizza.owl#Food>)
+	 Axiom 3. SubObjectPropertyOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient>)
+-> Explanation #10
+	 Axiom 1. ObjectPropertyDomain(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient> <http://www.co-ode.org/ontologies/pizza/pizza.owl#Food>)
+	 Axiom 2. SubObjectPropertyOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient>)
+	 Axiom 3. SubClassOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#Veneziana> ObjectSomeValuesFrom(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#TomatoTopping>))
+-> Explanation #10
+	 Axiom 1. ObjectPropertyDomain(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient> <http://www.co-ode.org/ontologies/pizza/pizza.owl#Food>)
+	 Axiom 2. SubClassOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#Veneziana> ObjectSomeValuesFrom(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#OliveTopping>))
+	 Axiom 3. SubObjectPropertyOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient>)
+-> Explanation #10
+	 Axiom 1. SubClassOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#Veneziana> ObjectSomeValuesFrom(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#SultanaTopping>))
+	 Axiom 2. ObjectPropertyDomain(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient> <http://www.co-ode.org/ontologies/pizza/pizza.owl#Food>)
+	 Axiom 3. SubObjectPropertyOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient>)
+-> Explanation #10
+	 Axiom 1. SubClassOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#Veneziana> ObjectSomeValuesFrom(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#PineKernels>))
+	 Axiom 2. ObjectPropertyDomain(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient> <http://www.co-ode.org/ontologies/pizza/pizza.owl#Food>)
+	 Axiom 3. SubObjectPropertyOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient>)
+
+Computing explanation for: <http://www.co-ode.org/ontologies/pizza/pizza.owl#Caprina> rdfs:subClassOf <http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza>
+-> Explanation #11
+	 Axiom 1. SubClassOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#Caprina> ObjectSomeValuesFrom(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#SundriedTomatoTopping>))
+	 Axiom 2. ObjectPropertyDomain(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza>)
+-> Explanation #11
+	 Axiom 1. SubClassOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#Caprina> ObjectSomeValuesFrom(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#GoatsCheeseTopping>))
+	 Axiom 2. ObjectPropertyDomain(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza>)
+-> Explanation #11
+	 Axiom 1. ObjectPropertyDomain(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza>)
+	 Axiom 2. SubClassOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#Caprina> ObjectSomeValuesFrom(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#TomatoTopping>))
+-> Explanation #11
+	 Axiom 1. SubClassOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#Caprina> ObjectSomeValuesFrom(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#MozzarellaTopping>))
+	 Axiom 2. ObjectPropertyDomain(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza>)
+
+Computing explanation for: <http://www.co-ode.org/ontologies/pizza/pizza.owl#Cajun> rdfs:subClassOf <http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza>
+-> Explanation #12
+	 Axiom 1. SubClassOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#Cajun> ObjectSomeValuesFrom(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#OnionTopping>))
+	 Axiom 2. ObjectPropertyDomain(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza>)
+-> Explanation #12
+	 Axiom 1. SubClassOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#Cajun> ObjectSomeValuesFrom(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#PrawnsTopping>))
+	 Axiom 2. ObjectPropertyDomain(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza>)
+-> Explanation #12
+	 Axiom 1. SubClassOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#Cajun> ObjectSomeValuesFrom(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#MozzarellaTopping>))
+	 Axiom 2. ObjectPropertyDomain(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza>)
+-> Explanation #12
+	 Axiom 1. ObjectPropertyDomain(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza>)
+	 Axiom 2. SubClassOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#Cajun> ObjectSomeValuesFrom(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#TobascoPepperSauce>))
+-> Explanation #12
+	 Axiom 1. SubClassOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#Cajun> ObjectSomeValuesFrom(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#PeperonataTopping>))
+	 Axiom 2. ObjectPropertyDomain(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza>)
+-> Explanation #12
+	 Axiom 1. SubClassOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#Cajun> ObjectSomeValuesFrom(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#TomatoTopping>))
+	 Axiom 2. ObjectPropertyDomain(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza>)
+
+Computing explanation for: <http://www.co-ode.org/ontologies/pizza/pizza.owl#Cajun> rdfs:subClassOf <http://www.co-ode.org/ontologies/pizza/pizza.owl#Food>
+-> Explanation #13
+	 Axiom 1. SubClassOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#Cajun> ObjectSomeValuesFrom(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#OnionTopping>))
+	 Axiom 2. ObjectPropertyDomain(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient> <http://www.co-ode.org/ontologies/pizza/pizza.owl#Food>)
+	 Axiom 3. SubObjectPropertyOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient>)
+-> Explanation #13
+	 Axiom 1. SubClassOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#Cajun> ObjectSomeValuesFrom(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#PrawnsTopping>))
+	 Axiom 2. ObjectPropertyDomain(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient> <http://www.co-ode.org/ontologies/pizza/pizza.owl#Food>)
+	 Axiom 3. SubObjectPropertyOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient>)
+-> Explanation #13
+	 Axiom 1. SubClassOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#Cajun> ObjectSomeValuesFrom(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#MozzarellaTopping>))
+	 Axiom 2. ObjectPropertyDomain(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient> <http://www.co-ode.org/ontologies/pizza/pizza.owl#Food>)
+	 Axiom 3. SubObjectPropertyOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient>)
+-> Explanation #13
+	 Axiom 1. ObjectPropertyDomain(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient> <http://www.co-ode.org/ontologies/pizza/pizza.owl#Food>)
+	 Axiom 2. SubObjectPropertyOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient>)
+	 Axiom 3. SubClassOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#Cajun> ObjectSomeValuesFrom(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#TobascoPepperSauce>))
+-> Explanation #13
+	 Axiom 1. ObjectPropertyDomain(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient> <http://www.co-ode.org/ontologies/pizza/pizza.owl#Food>)
+	 Axiom 2. SubClassOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#Cajun> ObjectSomeValuesFrom(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#PeperonataTopping>))
+	 Axiom 3. SubObjectPropertyOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient>)
+-> Explanation #13
+	 Axiom 1. SubClassOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#Cajun> ObjectSomeValuesFrom(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#TomatoTopping>))
+	 Axiom 2. ObjectPropertyDomain(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient> <http://www.co-ode.org/ontologies/pizza/pizza.owl#Food>)
+	 Axiom 3. SubObjectPropertyOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient>)
+
+Computing explanation for: <http://www.co-ode.org/ontologies/pizza/pizza.owl#Capricciosa> rdfs:subClassOf <http://www.co-ode.org/ontologies/pizza/pizza.owl#NamedPizza>
+-> Explanation #14
+	 Axiom 1. SubClassOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#Capricciosa> <http://www.co-ode.org/ontologies/pizza/pizza.owl#NamedPizza>)
+
+Computing explanation for: <http://www.co-ode.org/ontologies/pizza/pizza.owl#Capricciosa> rdfs:subClassOf <http://www.co-ode.org/ontologies/pizza/pizza.owl#Food>
+-> Explanation #15
+	 Axiom 1. SubClassOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#Capricciosa> ObjectSomeValuesFrom(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#TomatoTopping>))
+	 Axiom 2. ObjectPropertyDomain(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient> <http://www.co-ode.org/ontologies/pizza/pizza.owl#Food>)
+	 Axiom 3. SubObjectPropertyOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient>)
+-> Explanation #15
+	 Axiom 1. SubClassOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#Capricciosa> ObjectSomeValuesFrom(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#HamTopping>))
+	 Axiom 2. ObjectPropertyDomain(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient> <http://www.co-ode.org/ontologies/pizza/pizza.owl#Food>)
+	 Axiom 3. SubObjectPropertyOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient>)
+-> Explanation #15
+	 Axiom 1. SubClassOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#Capricciosa> ObjectSomeValuesFrom(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#OliveTopping>))
+	 Axiom 2. ObjectPropertyDomain(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient> <http://www.co-ode.org/ontologies/pizza/pizza.owl#Food>)
+	 Axiom 3. SubObjectPropertyOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient>)
+-> Explanation #15
+	 Axiom 1. SubClassOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#Capricciosa> ObjectSomeValuesFrom(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#PeperonataTopping>))
+	 Axiom 2. ObjectPropertyDomain(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient> <http://www.co-ode.org/ontologies/pizza/pizza.owl#Food>)
+	 Axiom 3. SubObjectPropertyOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient>)
+-> Explanation #15
+	 Axiom 1. SubClassOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#Capricciosa> ObjectSomeValuesFrom(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#CaperTopping>))
+	 Axiom 2. ObjectPropertyDomain(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient> <http://www.co-ode.org/ontologies/pizza/pizza.owl#Food>)
+	 Axiom 3. SubObjectPropertyOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient>)
+-> Explanation #15
+	 Axiom 1. SubClassOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#Capricciosa> ObjectSomeValuesFrom(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#MozzarellaTopping>))
+	 Axiom 2. ObjectPropertyDomain(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient> <http://www.co-ode.org/ontologies/pizza/pizza.owl#Food>)
+	 Axiom 3. SubObjectPropertyOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient>)
+-> Explanation #15
+	 Axiom 1. SubClassOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#Capricciosa> ObjectSomeValuesFrom(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#AnchoviesTopping>))
+	 Axiom 2. ObjectPropertyDomain(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient> <http://www.co-ode.org/ontologies/pizza/pizza.owl#Food>)
+	 Axiom 3. SubObjectPropertyOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient>)
+
+Computing explanation for: <http://www.co-ode.org/ontologies/pizza/pizza.owl#Capricciosa> rdfs:subClassOf <http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza>
+-> Explanation #16
+	 Axiom 1. SubClassOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#Capricciosa> ObjectSomeValuesFrom(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#TomatoTopping>))
+	 Axiom 2. ObjectPropertyDomain(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza>)
+-> Explanation #16
+	 Axiom 1. SubClassOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#Capricciosa> ObjectSomeValuesFrom(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#HamTopping>))
+	 Axiom 2. ObjectPropertyDomain(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza>)
+-> Explanation #16
+	 Axiom 1. SubClassOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#Capricciosa> ObjectSomeValuesFrom(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#OliveTopping>))
+	 Axiom 2. ObjectPropertyDomain(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza>)
+-> Explanation #16
+	 Axiom 1. SubClassOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#Capricciosa> ObjectSomeValuesFrom(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#PeperonataTopping>))
+	 Axiom 2. ObjectPropertyDomain(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza>)
+-> Explanation #16
+	 Axiom 1. SubClassOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#Capricciosa> ObjectSomeValuesFrom(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#CaperTopping>))
+	 Axiom 2. ObjectPropertyDomain(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza>)
+-> Explanation #16
+	 Axiom 1. SubClassOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#Capricciosa> ObjectSomeValuesFrom(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#MozzarellaTopping>))
+	 Axiom 2. ObjectPropertyDomain(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza>)
+-> Explanation #16
+	 Axiom 1. SubClassOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#Capricciosa> ObjectSomeValuesFrom(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#AnchoviesTopping>))
+	 Axiom 2. ObjectPropertyDomain(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza>)
+
+Computing explanation for: <http://www.co-ode.org/ontologies/pizza/pizza.owl#CheeseTopping> rdfs:subClassOf <http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetarianTopping>
+-> Explanation #17
+	 Axiom 1. EquivalentClasses(<http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetarianTopping> ObjectIntersectionOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#PizzaTopping> ObjectUnionOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#CheeseTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#FruitTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#HerbSpiceTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#NutTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#SauceTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetableTopping>)) )
+	 Axiom 2. SubClassOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#CheeseTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#PizzaTopping>)
+
+Computing explanation for: <http://www.co-ode.org/ontologies/pizza/pizza.owl#CaperTopping> rdfs:subClassOf <http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetableTopping>
+-> Explanation #18
+	 Axiom 1. SubClassOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#CaperTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetableTopping>)
+
+Computing explanation for: <http://www.co-ode.org/ontologies/pizza/pizza.owl#American> rdfs:subClassOf <http://www.co-ode.org/ontologies/pizza/pizza.owl#Food>
+-> Explanation #19
+	 Axiom 1. ObjectPropertyDomain(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient> <http://www.co-ode.org/ontologies/pizza/pizza.owl#Food>)
+	 Axiom 2. SubObjectPropertyOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient>)
+	 Axiom 3. SubClassOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#American> ObjectSomeValuesFrom(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#TomatoTopping>))
+-> Explanation #19
+	 Axiom 1. SubClassOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#American> ObjectSomeValuesFrom(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#MozzarellaTopping>))
+	 Axiom 2. ObjectPropertyDomain(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient> <http://www.co-ode.org/ontologies/pizza/pizza.owl#Food>)
+	 Axiom 3. SubObjectPropertyOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient>)
+-> Explanation #19
+	 Axiom 1. ObjectPropertyDomain(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient> <http://www.co-ode.org/ontologies/pizza/pizza.owl#Food>)
+	 Axiom 2. SubClassOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#American> ObjectSomeValuesFrom(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#PeperoniSausageTopping>))
+	 Axiom 3. SubObjectPropertyOf(<http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping> <http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient>)
+
+
+DONE! Saving all explanations for subsumptions located at: datasets/subClasses.nt
+--------
+
+
+Parsing datasets/pizza_super_simple.owl...
+Simple: 33.78%, EL: 74.32%, ALC: 82.43%, ALCI: 82.43%, SHQ: 82.43%, axioms: 91, TBox: 74, RBox: 5, ABox: 12 Signature: 106
+converting...
+Using method 2 (uk.ac.man.cs.lethe.internal.dl.forgetting.SHQForgetter$)
+Using signature file datasets/signature.txt
+Using forgetter uk.ac.man.cs.lethe.internal.dl.forgetting.SHQForgetter$@50de186c
+
+Input Number of Axioms: 470
+Input Average Axiom size: 4.957446808510638
+Input Definers: 0
+Input Number Restrictions: 3
+
+
+ The following symbols will be forgotten:
+http://www.co-ode.org/ontologies/pizza/pizza.owl#ChickenTopping
+http://www.co-ode.org/ontologies/pizza/pizza.owl#PizzaBase
+
+
+
+Forgetting...
+Started at Fri Oct 02 10:42:59 CEST 2020
+
+ |                                                | 0/3 (0.00%)                                                                  |                                                | 0/3 (0.00%) Forgetting ChickenTopping                                                                                          |================                                | 1/3 (33.33%) Forgetting ChickenTopping                                                                                           |================                                | 1/3 (33.33%) Forgetting PizzaBase                                                                                      |================================                | 2/3 (66.67%) Forgetting PizzaBase                                                                                      |================================================| 3/3 (100.00%) Finished!
+
+
+Finished at Fri Oct 02 10:42:59 CEST 2020
+Duration: 224
+
+Result Number of Axioms: 449
+Result Average Axiom size: 5.091314031180401
+Result Definers: 0
+Result Number Restrictions: 3
+
+Exporting to result.owl...
