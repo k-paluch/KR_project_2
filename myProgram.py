@@ -19,7 +19,7 @@ forgetOntology = "datasets/pizza_super_simple.owl"
 # 1 - ALCHTBoxForgetter
 # 2 - SHQTBoxForgetter
 # 3 - ALCOntologyForgetter
-method = "2" #
+method = "1	" #
 
 # Choose the symbols which you want to forget.
 signature = "datasets/signature.txt"
@@ -47,7 +47,7 @@ os.system('java -jar kr_functions.jar ' + 'saveAllSubClasses' + " " + inputOntol
 
 # For running LETHE forget command:
 # --> uncomment the following line to run this function
-os.system('java -cp lethe-standalone.jar uk.ac.man.cs.lethe.internal.application.ForgettingConsoleApplication --owlFile ' + inputOntology + ' --method ' + method  + ' --signature ' + signature)
+# os.system('java -cp lethe-standalone.jar uk.ac.man.cs.lethe.internal.application.ForgettingConsoleApplication --owlFile ' + inputOntology + ' --method ' + method  + ' --signature ' + signature)
 
 elements = []
 
@@ -63,7 +63,7 @@ print(elements)
 
 to_forget = []
 
-for x in range(2):
+for x in range(10):
 	tmp = randint(0,len(elements)-1)
 	to_forget.append(elements[tmp])
 	elements.pop(tmp)
@@ -73,6 +73,7 @@ f.close()
 
 with open("datasets/signature.txt", "a") as f:
 	for t in to_forget:
-		f.write(t)
+		f.write(f'{t}\n')
 
 os.system('java -cp lethe-standalone.jar uk.ac.man.cs.lethe.internal.application.ForgettingConsoleApplication --owlFile ' + inputOntology + ' --method ' + method  + ' --signature ' + signature)
+os.system('java -jar kr_functions.jar ' + 'saveAllExplanations' + " " + 'result.owl' + " " + inputSubclassStatements)

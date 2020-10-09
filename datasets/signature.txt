@@ -1,1 +1,10 @@
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Food
+http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetarianTopping
+http://www.co-ode.org/ontologies/pizza/pizza.owl#HerbSpiceTopping
+http://www.co-ode.org/ontologies/pizza/pizza.owl#NamedPizza
+http://www.co-ode.org/ontologies/pizza/pizza.owl#CaperTopping
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Veneziana
+http://www.co-ode.org/ontologies/pizza/pizza.owl#CajunSpiceTopping
+http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetableTopping
 http://www.co-ode.org/ontologies/pizza/pizza.owl#PizzaTopping
