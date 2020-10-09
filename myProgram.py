@@ -1,5 +1,6 @@
 import os
-
+from random import randint, seed
+seed(1)
 # This is an example puython programme which shows how to use the different stand-alone versions of OWL reasoners and forgetting programme
 
 # Choose the ontology (in the OWL format) for which you want to explain the entailed subsumption relations.
@@ -18,7 +19,7 @@ forgetOntology = "datasets/pizza_super_simple.owl"
 # 1 - ALCHTBoxForgetter
 # 2 - SHQTBoxForgetter
 # 3 - ALCOntologyForgetter
-method = "3" #
+method = "2" #
 
 # Choose the symbols which you want to forget.
 signature = "datasets/signature.txt"
@@ -26,7 +27,7 @@ signature = "datasets/signature.txt"
 # 1. PRINT ALL SUBCLASSES (inputOntology):
 # print all subClass statements (explicit and inferred) in the inputOntology
 # --> uncomment the following line to run this function
-os.system('java -jar kr_functions.jar ' + 'printAllSubClasses' + " " + inputOntology)
+#os.system('java -jar kr_functions.jar ' + 'printAllSubClasses' + " " + inputOntology)
 
 # 2. SAVE ALL SUBCLASSES (inputOntology):
 # save all subClass statements (explicit and inferred) in the inputOntology to file datasets/subClasses.nt
@@ -36,18 +37,17 @@ os.system('java -jar kr_functions.jar ' + 'saveAllSubClasses' + " " + inputOntol
 # 3. PRINT ALL EXPLANATIONS (inputOntology, inputSubclassStatements):
 # print explanations for each subClass statement in the inputSubclassStatements
 # --> uncomment the following line to run this function
-os.system('java -jar kr_functions.jar ' + 'printAllExplanations' + " " + inputOntology + " " + inputSubclassStatements)
+#os.system('java -jar kr_functions.jar ' + 'printAllExplanations' + " " + inputOntology + " " + inputSubclassStatements)
 
 # 4. SAVE ALL EXPLANATIONS (inputOntology, inputSubclassStatements):
 # save explanations for each subClass statement in the inputSubclassStatements to file datasets/exp-#.owl
 # --> uncomment the following line to run this function
-os.system('java -jar kr_functions.jar ' + 'saveAllExplanations' + " " + inputOntology + " " + inputSubclassStatements)	
-
+#os.system('java -jar kr_functions.jar ' + 'saveAllExplanations' + " " + inputOntology + " " + inputSubclassStatements)
 
 
 # For running LETHE forget command:
 # --> uncomment the following line to run this function
-os.system('java -cp lethe-standalone.jar uk.ac.man.cs.lethe.internal.application.ForgettingConsoleApplication --owlFile ' + forgetOntology + ' --method ' + method  + ' --signature ' + signature)
+os.system('java -cp lethe-standalone.jar uk.ac.man.cs.lethe.internal.application.ForgettingConsoleApplication --owlFile ' + inputOntology + ' --method ' + method  + ' --signature ' + signature)
 
 elements = []
 
@@ -61,7 +61,18 @@ with open("datasets/subClasses.nt", "r") as file:
 
 print(elements)
 
-for x in elements:
-	with open("datasets/signature.txt", "w") as f:
-		f.write(x)
-	os.system('java -cp lethe-standalone.jar uk.ac.man.cs.lethe.internal.application.ForgettingConsoleApplication --owlFile ' + forgetOntology + ' --method ' + method  + ' --signature ' + signature)
+to_forget = []
+
+for x in range(2):
+	tmp = randint(0,len(elements)-1)
+	to_forget.append(elements[tmp])
+	elements.pop(tmp)
+
+f = open('datasets/signature.txt','w')
+f.close()
+
+with open("datasets/signature.txt", "a") as f:
+	for t in to_forget:
+		f.write(t)
+
+os.system('java -cp lethe-standalone.jar uk.ac.man.cs.lethe.internal.application.ForgettingConsoleApplication --owlFile ' + inputOntology + ' --method ' + method  + ' --signature ' + signature)
