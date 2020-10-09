@@ -4,7 +4,7 @@ seed(1)
 # This is an example puython programme which shows how to use the different stand-alone versions of OWL reasoners and forgetting programme
 
 # Choose the ontology (in the OWL format) for which you want to explain the entailed subsumption relations.
-inputOntology = "./pizza_super_simple.owl"
+inputOntology = "./mamo-xml.owl"
 
 # Choose the set of subclass for which you want to find an explanation.
 # this file can be generated using the second command (saveAllSubClasses)
@@ -19,7 +19,7 @@ forgetOntology = "./result.owl"
 # 1 - ALCHTBoxForgetter
 # 2 - SHQTBoxForgetter
 # 3 - ALCOntologyForgetter
-method = "1	" #
+method = "2" #
 
 # Choose the symbols which you want to forget.
 signature = "./signature.txt"
@@ -42,15 +42,13 @@ os.system('java -jar kr_functions.jar ' + 'saveAllSubClasses' + " " + inputOntol
 # 4. SAVE ALL EXPLANATIONS (inputOntology, inputSubclassStatements):
 # save explanations for each subClass statement in the inputSubclassStatements to file datasets/exp-#.owl
 # --> uncomment the following line to run this function
-#os.system('java -jar kr_functions.jar ' + 'saveAllExplanations' + " " + inputOntology + " " + inputSubclassStatements)
-
+# os.system('java -jar kr_functions.jar ' + 'saveAllExplanations' + " " + inputOntology + " " + inputSubclassStatements)
 
 # For running LETHE forget command:
 # --> uncomment the following line to run this function
 # os.system('java -cp lethe-standalone.jar uk.ac.man.cs.lethe.internal.application.ForgettingConsoleApplication --owlFile ' + inputOntology + ' --method ' + method  + ' --signature ' + signature)
 
 elements = []
-
 with open("subClasses.nt", "r") as file:
 	for line in file:
 		words = line.split()
@@ -59,11 +57,11 @@ with open("subClasses.nt", "r") as file:
 		if(words[2][1:-1] not in elements):
 			elements.append(words[2][1:-1])
 
-print(elements)
+print(len(elements))
 
 to_forget = []
 
-for x in range(4):
+for x in range(90):
 	tmp = randint(0,len(elements)-1)
 	to_forget.append(elements[tmp])
 	elements.pop(tmp)
