@@ -12,7 +12,7 @@ inputSubclassStatements = "datasets/subClasses.nt"
 
 # Choose the ontology to which you want to apply forgetting. This can be the inputOntology, but in practise
 # should be a smaller ontology, e.g. created as a justification for a subsumption
-forgetOntology = "datasets/pizza_super_simple.owl"
+forgetOntology = "./result.owl"
 
 # Decide on a method for the forgetter (check the papers of LETHE to understand the different options).
 # The default is 1, I believe.
@@ -63,7 +63,7 @@ print(elements)
 
 to_forget = []
 
-for x in range(10):
+for x in range(5):
 	tmp = randint(0,len(elements)-1)
 	to_forget.append(elements[tmp])
 	elements.pop(tmp)
@@ -75,5 +75,7 @@ with open("datasets/signature.txt", "a") as f:
 	for t in to_forget:
 		f.write(f'{t}\n')
 
-os.system('java -cp lethe-standalone.jar uk.ac.man.cs.lethe.internal.application.ForgettingConsoleApplication --owlFile ' + inputOntology + ' --method ' + method  + ' --signature ' + signature)
-os.system('java -jar kr_functions.jar ' + 'saveAllExplanations' + " " + 'result.owl' + " " + inputSubclassStatements)
+os.system('java -cp lethe-standalone.jar uk.ac.man.cs.lethe.internal.application.ForgettingConsoleApplication --owlFile ' + forgetOntology + ' --method ' + method  + ' --signature ' + signature)
+
+os.system('java -jar kr_functions.jar ' + 'saveAllSubClasses' + " " + forgetOntology)
+os.system('java -jar kr_functions.jar ' + 'saveAllExplanations' + " " + forgetOntology + " " + inputSubclassStatements)
