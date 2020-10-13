@@ -107,4 +107,4 @@ for t in to_forget:
 	n+=1
 
 os.system('java -jar kr_functions.jar ' + 'saveAllSubClasses' + " " + forgetOntology)
-os.system('java -jar kr_functions.jar ' + 'saveAllExplanations' + " " + inputOntology + " " + inputSubclassStatements)
+os.system('java -jar kr_functions.jar ' + 'saveAllExplanations' + " " + forgetOntology + " " + inputSubclassStatements)
