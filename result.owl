@@ -19,21 +19,395 @@
     
 
 
-    <!-- http://identifiers.org/mamo#hasFeature -->
+    <!-- http://www.w3.org/2008/05/skos#broadMatch -->
 
-    <ObjectProperty rdf:about="http://identifiers.org/mamo#hasFeature"/>
+    <ObjectProperty rdf:about="http://www.w3.org/2008/05/skos#broadMatch">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2008/05/skos#broader"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2008/05/skos#mappingRelation"/>
+    </ObjectProperty>
     
 
 
-    <!-- http://identifiers.org/mamo#isUsedToModel -->
+    <!-- http://www.w3.org/2008/05/skos#broader -->
 
-    <ObjectProperty rdf:about="http://identifiers.org/mamo#isUsedToModel"/>
+    <ObjectProperty rdf:about="http://www.w3.org/2008/05/skos#broader">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2008/05/skos#broaderTransitive"/>
+    </ObjectProperty>
     
 
 
-    <!-- http://identifiers.org/mamo#lacksFeature -->
+    <!-- http://www.w3.org/2008/05/skos#broaderTransitive -->
 
-    <ObjectProperty rdf:about="http://identifiers.org/mamo#lacksFeature"/>
+    <ObjectProperty rdf:about="http://www.w3.org/2008/05/skos#broaderTransitive">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2008/05/skos#semanticRelation"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#changeNote -->
+
+    <ObjectProperty rdf:about="http://www.w3.org/2008/05/skos#changeNote">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2008/05/skos#note"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#closeMatch -->
+
+    <ObjectProperty rdf:about="http://www.w3.org/2008/05/skos#closeMatch">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2008/05/skos#mappingRelation"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#definition -->
+
+    <ObjectProperty rdf:about="http://www.w3.org/2008/05/skos#definition">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2008/05/skos#note"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#editorialNote -->
+
+    <ObjectProperty rdf:about="http://www.w3.org/2008/05/skos#editorialNote">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2008/05/skos#note"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#exactMatch -->
+
+    <ObjectProperty rdf:about="http://www.w3.org/2008/05/skos#exactMatch">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2008/05/skos#closeMatch"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#example -->
+
+    <ObjectProperty rdf:about="http://www.w3.org/2008/05/skos#example">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2008/05/skos#note"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#hasTopConcept -->
+
+    <ObjectProperty rdf:about="http://www.w3.org/2008/05/skos#hasTopConcept"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#historyNote -->
+
+    <ObjectProperty rdf:about="http://www.w3.org/2008/05/skos#historyNote">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2008/05/skos#note"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#inScheme -->
+
+    <ObjectProperty rdf:about="http://www.w3.org/2008/05/skos#inScheme"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#mappingRelation -->
+
+    <ObjectProperty rdf:about="http://www.w3.org/2008/05/skos#mappingRelation"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#member -->
+
+    <ObjectProperty rdf:about="http://www.w3.org/2008/05/skos#member"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#memberList -->
+
+    <ObjectProperty rdf:about="http://www.w3.org/2008/05/skos#memberList"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#narrowMatch -->
+
+    <ObjectProperty rdf:about="http://www.w3.org/2008/05/skos#narrowMatch">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2008/05/skos#mappingRelation"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2008/05/skos#narrower"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#narrower -->
+
+    <ObjectProperty rdf:about="http://www.w3.org/2008/05/skos#narrower">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2008/05/skos#narrowerTransitive"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#narrowerTransitive -->
+
+    <ObjectProperty rdf:about="http://www.w3.org/2008/05/skos#narrowerTransitive">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2008/05/skos#semanticRelation"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#note -->
+
+    <ObjectProperty rdf:about="http://www.w3.org/2008/05/skos#note"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#related -->
+
+    <ObjectProperty rdf:about="http://www.w3.org/2008/05/skos#related">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2008/05/skos#semanticRelation"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#relatedMatch -->
+
+    <ObjectProperty rdf:about="http://www.w3.org/2008/05/skos#relatedMatch">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2008/05/skos#mappingRelation"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2008/05/skos#related"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#scopeNote -->
+
+    <ObjectProperty rdf:about="http://www.w3.org/2008/05/skos#scopeNote">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2008/05/skos#note"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#semanticRelation -->
+
+    <ObjectProperty rdf:about="http://www.w3.org/2008/05/skos#semanticRelation"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#topConceptOf -->
+
+    <ObjectProperty rdf:about="http://www.w3.org/2008/05/skos#topConceptOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2008/05/skos#inScheme"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/account -->
+
+    <ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/account"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/accountServiceHomepage -->
+
+    <ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/accountServiceHomepage"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/based_near -->
+
+    <ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/based_near"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/currentProject -->
+
+    <ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/currentProject"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/depiction -->
+
+    <ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/depiction"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/depicts -->
+
+    <ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/depicts"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/focus -->
+
+    <ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/focus"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/holdsAccount -->
+
+    <ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/holdsAccount"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/homepage -->
+
+    <ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/homepage">
+        <rdfs:subPropertyOf rdf:resource="http://xmlns.com/foaf/0.1/isPrimaryTopicOf"/>
+        <rdfs:subPropertyOf rdf:resource="http://xmlns.com/foaf/0.1/page"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/img -->
+
+    <ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/img">
+        <rdfs:subPropertyOf rdf:resource="http://xmlns.com/foaf/0.1/depiction"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/interest -->
+
+    <ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/interest"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/isPrimaryTopicOf -->
+
+    <ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/isPrimaryTopicOf">
+        <rdfs:subPropertyOf rdf:resource="http://xmlns.com/foaf/0.1/page"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/knows -->
+
+    <ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/knows"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/member -->
+
+    <ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/member"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/openid -->
+
+    <ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/openid">
+        <rdfs:subPropertyOf rdf:resource="http://xmlns.com/foaf/0.1/isPrimaryTopicOf"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/page -->
+
+    <ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/page"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/pastProject -->
+
+    <ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/pastProject"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/primaryTopic -->
+
+    <ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/primaryTopic"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/publications -->
+
+    <ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/publications"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/schoolHomepage -->
+
+    <ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/schoolHomepage"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/thumbnail -->
+
+    <ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/thumbnail"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/tipjar -->
+
+    <ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/tipjar">
+        <rdfs:subPropertyOf rdf:resource="http://xmlns.com/foaf/0.1/page"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/topic -->
+
+    <ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/topic"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/weblog -->
+
+    <ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/weblog">
+        <rdfs:subPropertyOf rdf:resource="http://xmlns.com/foaf/0.1/page"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/workInfoHomepage -->
+
+    <ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/workInfoHomepage"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/workplaceHomepage -->
+
+    <ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/workplaceHomepage"/>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#InspiredFrom -->
+
+    <ObjectProperty rdf:about="https://w3id.org/skgo/modsci#InspiredFrom"/>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#InstrumentusedInScience -->
+
+    <ObjectProperty rdf:about="https://w3id.org/skgo/modsci#InstrumentusedInScience"/>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#InterestedInStudyingPhenomenon -->
+
+    <ObjectProperty rdf:about="https://w3id.org/skgo/modsci#InterestedInStudyingPhenomenon"/>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#discoveredByScientist -->
+
+    <ObjectProperty rdf:about="https://w3id.org/skgo/modsci#discoveredByScientist"/>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#hasApplications -->
+
+    <ObjectProperty rdf:about="https://w3id.org/skgo/modsci#hasApplications"/>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#isApplicationOfScience -->
+
+    <ObjectProperty rdf:about="https://w3id.org/skgo/modsci#isApplicationOfScience"/>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#isDiscoverdBy -->
+
+    <ObjectProperty rdf:about="https://w3id.org/skgo/modsci#isDiscoverdBy"/>
     
 
 
@@ -48,1199 +422,40 @@
     
 
 
-    <!-- http://identifiers.org/mamo#MAMO_0000206 -->
+    <!-- http://schema.org/CreativeWork -->
 
-    <Class rdf:about="http://identifiers.org/mamo#MAMO_0000206">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000028"/>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://identifiers.org/mamo#hasFeature"/>
-                <someValuesFrom>
-                    <Class>
-                        <intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000062"/>
-                            <Class>
-                                <complementOf rdf:resource="http://identifiers.org/mamo/MAMO_0000063"/>
-                            </Class>
-                        </intersectionOf>
-                    </Class>
-                </someValuesFrom>
-            </Restriction>
-        </rdfs:subClassOf>
+    <Class rdf:about="http://schema.org/CreativeWork">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
     </Class>
     
 
 
-    <!-- http://identifiers.org/mamo#MAMO_0000207 -->
+    <!-- http://schema.org/ImageObject -->
 
-    <Class rdf:about="http://identifiers.org/mamo#MAMO_0000207">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo#MAMO_0000206"/>
+    <Class rdf:about="http://schema.org/ImageObject">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Image"/>
     </Class>
     
 
 
-    <!-- http://identifiers.org/mamo#MAMO_0000208 -->
+    <!-- http://schema.org/Person -->
 
-    <Class rdf:about="http://identifiers.org/mamo#MAMO_0000208">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo#MAMO_0000206"/>
+    <Class rdf:about="http://schema.org/Person">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     </Class>
     
 
 
-    <!-- http://identifiers.org/mamo#MAMO_0000209 -->
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#List -->
 
-    <Class rdf:about="http://identifiers.org/mamo#MAMO_0000209">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo#MAMO_0000206"/>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo#MAMO_0000210 -->
-
-    <Class rdf:about="http://identifiers.org/mamo#MAMO_0000210">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo#MAMO_0000206"/>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo#continuous_variable -->
-
-    <Class rdf:about="http://identifiers.org/mamo#continuous_variable">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000086"/>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo#ordinal_variable -->
-
-    <Class rdf:about="http://identifiers.org/mamo#ordinal_variable">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000086"/>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000003 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000003">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000037"/>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000004 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000004">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000003"/>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://identifiers.org/mamo#hasFeature"/>
-                <someValuesFrom rdf:resource="http://identifiers.org/mamo/MAMO_0000058"/>
-            </Restriction>
-        </rdfs:subClassOf>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000008 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000008">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000003"/>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://identifiers.org/mamo#hasFeature"/>
-                <someValuesFrom rdf:resource="http://identifiers.org/mamo/MAMO_0000056"/>
-            </Restriction>
-        </rdfs:subClassOf>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000009 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000009">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000008"/>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://identifiers.org/mamo#hasFeature"/>
-                <someValuesFrom rdf:resource="http://identifiers.org/mamo/MAMO_0000058"/>
-            </Restriction>
-        </rdfs:subClassOf>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000010 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000010"/>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000017 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000017">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000010"/>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000018 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000018">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000010"/>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000019 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000019">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000181"/>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://identifiers.org/mamo#hasFeature"/>
-                <someValuesFrom rdf:resource="http://identifiers.org/mamo/MAMO_0000058"/>
-            </Restriction>
-        </rdfs:subClassOf>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000020 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000020">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000181"/>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://identifiers.org/mamo#hasFeature"/>
-                <someValuesFrom rdf:resource="http://identifiers.org/mamo/MAMO_0000058"/>
-            </Restriction>
-        </rdfs:subClassOf>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000022 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000022">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000003"/>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://identifiers.org/mamo#hasFeature"/>
-                <someValuesFrom>
-                    <Class>
-                        <intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000062"/>
-                            <Class>
-                                <complementOf rdf:resource="http://identifiers.org/mamo/MAMO_0000063"/>
-                            </Class>
-                        </intersectionOf>
-                    </Class>
-                </someValuesFrom>
-            </Restriction>
-        </rdfs:subClassOf>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000023 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000023">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000003"/>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000024 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000024">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000023"/>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://identifiers.org/mamo#hasFeature"/>
-                <someValuesFrom>
-                    <Class>
-                        <intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000062"/>
-                            <Class>
-                                <complementOf rdf:resource="http://identifiers.org/mamo/MAMO_0000063"/>
-                            </Class>
-                        </intersectionOf>
-                    </Class>
-                </someValuesFrom>
-            </Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://identifiers.org/mamo#hasFeature"/>
-                <someValuesFrom rdf:resource="http://identifiers.org/mamo/MAMO_0000059"/>
-            </Restriction>
-        </rdfs:subClassOf>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000025 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000025">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000003"/>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://identifiers.org/mamo#hasFeature"/>
-                <someValuesFrom rdf:resource="http://identifiers.org/mamo/MAMO_0000057"/>
-            </Restriction>
-        </rdfs:subClassOf>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000026 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000026">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000180"/>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://identifiers.org/mamo#hasFeature"/>
-                <someValuesFrom rdf:resource="http://identifiers.org/mamo/MAMO_0000056"/>
-            </Restriction>
-        </rdfs:subClassOf>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000027 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000027"/>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000028 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000028">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000003"/>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://identifiers.org/mamo#hasFeature"/>
-                <someValuesFrom rdf:resource="http://identifiers.org/mamo/MAMO_0000058"/>
-            </Restriction>
-        </rdfs:subClassOf>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000029 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000029">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000028"/>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000030 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000030">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000003"/>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000031 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000031">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000027"/>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000032 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000032"/>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000033 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000033">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000180"/>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://identifiers.org/mamo#hasFeature"/>
-                <someValuesFrom rdf:resource="http://identifiers.org/mamo/MAMO_0000056"/>
-            </Restriction>
-        </rdfs:subClassOf>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000034 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000034">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000033"/>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000035 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000035">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000180"/>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000036 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000036">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000035"/>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000037 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000037"/>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000038 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000038">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000036"/>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000039 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000039">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000036"/>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000041 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000041">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000003"/>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://identifiers.org/mamo#hasFeature"/>
-                <someValuesFrom>
-                    <Class>
-                        <intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000062"/>
-                            <Class>
-                                <complementOf rdf:resource="http://identifiers.org/mamo/MAMO_0000063"/>
-                            </Class>
-                        </intersectionOf>
-                    </Class>
-                </someValuesFrom>
-            </Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://identifiers.org/mamo#isUsedToModel"/>
-                <someValuesFrom rdf:resource="http://identifiers.org/mamo/MAMO_0000039"/>
-            </Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://identifiers.org/mamo#isUsedToModel"/>
-                <someValuesFrom rdf:resource="http://identifiers.org/mamo/MAMO_0000038"/>
-            </Restriction>
-        </rdfs:subClassOf>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000043 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000043">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000041"/>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://identifiers.org/mamo#hasFeature"/>
-                <someValuesFrom rdf:resource="http://identifiers.org/mamo/MAMO_0000056"/>
-            </Restriction>
-        </rdfs:subClassOf>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000044 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000044">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000003"/>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://identifiers.org/mamo#hasFeature"/>
-                <someValuesFrom>
-                    <Class>
-                        <intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000062"/>
-                            <Class>
-                                <complementOf rdf:resource="http://identifiers.org/mamo/MAMO_0000063"/>
-                            </Class>
-                        </intersectionOf>
-                    </Class>
-                </someValuesFrom>
-            </Restriction>
-        </rdfs:subClassOf>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000045 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000045">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000003"/>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://identifiers.org/mamo#isUsedToModel"/>
-                <someValuesFrom rdf:resource="http://identifiers.org/mamo/MAMO_0000039"/>
-            </Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://identifiers.org/mamo#isUsedToModel"/>
-                <someValuesFrom rdf:resource="http://identifiers.org/mamo/MAMO_0000038"/>
-            </Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://identifiers.org/mamo#isUsedToModel"/>
-                <someValuesFrom>
-                    <Class>
-                        <intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000036"/>
-                            <Class>
-                                <complementOf rdf:resource="http://identifiers.org/mamo/MAMO_0000038"/>
-                            </Class>
-                            <Class>
-                                <complementOf rdf:resource="http://identifiers.org/mamo/MAMO_0000039"/>
-                            </Class>
-                            <Class>
-                                <complementOf rdf:resource="http://identifiers.org/mamo/MAMO_0000202"/>
-                            </Class>
-                        </intersectionOf>
-                    </Class>
-                </someValuesFrom>
-            </Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://identifiers.org/mamo#hasFeature"/>
-                <someValuesFrom rdf:resource="http://identifiers.org/mamo/MAMO_0000060"/>
-            </Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://identifiers.org/mamo#hasFeature"/>
-                <someValuesFrom rdf:resource="http://identifiers.org/mamo/MAMO_0000058"/>
-            </Restriction>
-        </rdfs:subClassOf>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000046 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000046">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000045"/>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://identifiers.org/mamo#hasFeature"/>
-                <someValuesFrom rdf:resource="http://identifiers.org/mamo/MAMO_0000063"/>
-            </Restriction>
-        </rdfs:subClassOf>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000047 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000047">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000045"/>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://identifiers.org/mamo#hasFeature"/>
-                <someValuesFrom>
-                    <Class>
-                        <intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000062"/>
-                            <Class>
-                                <complementOf rdf:resource="http://identifiers.org/mamo/MAMO_0000063"/>
-                            </Class>
-                        </intersectionOf>
-                    </Class>
-                </someValuesFrom>
-            </Restriction>
-        </rdfs:subClassOf>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000048 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000048">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000045"/>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://identifiers.org/mamo#hasFeature"/>
-                <someValuesFrom rdf:resource="http://identifiers.org/mamo/MAMO_0000063"/>
-            </Restriction>
-        </rdfs:subClassOf>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000049 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000049">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000003"/>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://identifiers.org/mamo#hasFeature"/>
-                <someValuesFrom>
-                    <Class>
-                        <intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000062"/>
-                            <Class>
-                                <complementOf rdf:resource="http://identifiers.org/mamo/MAMO_0000063"/>
-                            </Class>
-                        </intersectionOf>
-                    </Class>
-                </someValuesFrom>
-            </Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://identifiers.org/mamo#hasFeature"/>
-                <someValuesFrom rdf:resource="http://identifiers.org/mamo/MAMO_0000059"/>
-            </Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://identifiers.org/mamo#hasFeature"/>
-                <someValuesFrom rdf:resource="http://identifiers.org/mamo/MAMO_0000056"/>
-            </Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://identifiers.org/mamo#isUsedToModel"/>
-                <someValuesFrom rdf:resource="http://identifiers.org/mamo/MAMO_0000038"/>
-            </Restriction>
-        </rdfs:subClassOf>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000050 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000050">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000023"/>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://identifiers.org/mamo#isUsedToModel"/>
-                <someValuesFrom rdf:resource="http://identifiers.org/mamo/MAMO_0000038"/>
-            </Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://identifiers.org/mamo#isUsedToModel"/>
-                <someValuesFrom>
-                    <Class>
-                        <intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000036"/>
-                            <Class>
-                                <complementOf rdf:resource="http://identifiers.org/mamo/MAMO_0000038"/>
-                            </Class>
-                            <Class>
-                                <complementOf rdf:resource="http://identifiers.org/mamo/MAMO_0000039"/>
-                            </Class>
-                            <Class>
-                                <complementOf rdf:resource="http://identifiers.org/mamo/MAMO_0000202"/>
-                            </Class>
-                        </intersectionOf>
-                    </Class>
-                </someValuesFrom>
-            </Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://identifiers.org/mamo#hasFeature"/>
-                <someValuesFrom rdf:resource="http://identifiers.org/mamo/MAMO_0000059"/>
-            </Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://identifiers.org/mamo#isUsedToModel"/>
-                <someValuesFrom rdf:resource="http://identifiers.org/mamo/MAMO_0000039"/>
-            </Restriction>
-        </rdfs:subClassOf>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000051 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000051">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000050"/>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://identifiers.org/mamo#hasFeature"/>
-                <someValuesFrom rdf:resource="http://identifiers.org/mamo/MAMO_0000056"/>
-            </Restriction>
-        </rdfs:subClassOf>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000052 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000052">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000050"/>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://identifiers.org/mamo#hasFeature"/>
-                <someValuesFrom>
-                    <Class>
-                        <intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000062"/>
-                            <Class>
-                                <complementOf rdf:resource="http://identifiers.org/mamo/MAMO_0000063"/>
-                            </Class>
-                        </intersectionOf>
-                    </Class>
-                </someValuesFrom>
-            </Restriction>
-        </rdfs:subClassOf>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000053 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000053">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000030"/>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://identifiers.org/mamo#isUsedToModel"/>
-                <someValuesFrom rdf:resource="http://identifiers.org/mamo/MAMO_0000039"/>
-            </Restriction>
-        </rdfs:subClassOf>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000055 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000055"/>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000056 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000056">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000055"/>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000057 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000057">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000055"/>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000058 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000058"/>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000059 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000059">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000058"/>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000060 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000060">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000058"/>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000061 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000061"/>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000062 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000062"/>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000063 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000063">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000062"/>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000069 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000069">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000025"/>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000070 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000070">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000025"/>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://identifiers.org/mamo#hasFeature"/>
-                <someValuesFrom rdf:resource="http://identifiers.org/mamo/MAMO_0000060"/>
-            </Restriction>
-        </rdfs:subClassOf>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000071 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000071">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000025"/>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000072 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000072">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000071"/>
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000073"/>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000073 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000073">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000025"/>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000074 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000074">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000025"/>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://identifiers.org/mamo#hasFeature"/>
-                <someValuesFrom>
-                    <Class>
-                        <intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000062"/>
-                            <Class>
-                                <complementOf rdf:resource="http://identifiers.org/mamo/MAMO_0000063"/>
-                            </Class>
-                        </intersectionOf>
-                    </Class>
-                </someValuesFrom>
-            </Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://identifiers.org/mamo#hasFeature"/>
-                <someValuesFrom rdf:resource="http://identifiers.org/mamo/MAMO_0000059"/>
-            </Restriction>
-        </rdfs:subClassOf>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000075 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000075">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000004"/>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000076 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000076">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000004"/>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://identifiers.org/mamo#hasFeature"/>
-                <someValuesFrom>
-                    <Class>
-                        <intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000062"/>
-                            <Class>
-                                <complementOf rdf:resource="http://identifiers.org/mamo/MAMO_0000063"/>
-                            </Class>
-                        </intersectionOf>
-                    </Class>
-                </someValuesFrom>
-            </Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://identifiers.org/mamo#hasFeature"/>
-                <someValuesFrom rdf:resource="http://identifiers.org/mamo/MAMO_0000063"/>
-            </Restriction>
-        </rdfs:subClassOf>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000077 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000077">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000004"/>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000080 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000080">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000086"/>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://identifiers.org/mamo#hasFeature"/>
-                <someValuesFrom rdf:resource="http://identifiers.org/mamo/MAMO_0000059"/>
-            </Restriction>
-        </rdfs:subClassOf>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000081 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000081">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000086"/>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://identifiers.org/mamo#hasFeature"/>
-                <someValuesFrom rdf:resource="http://identifiers.org/mamo/MAMO_0000059"/>
-            </Restriction>
-        </rdfs:subClassOf>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000082 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000082">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000086"/>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://identifiers.org/mamo#hasFeature"/>
-                <someValuesFrom rdf:resource="http://identifiers.org/mamo/MAMO_0000059"/>
-            </Restriction>
-        </rdfs:subClassOf>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000083 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000083">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000086"/>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000084 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000084">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000027"/>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000085 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000085">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000027"/>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000086 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000086">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000010"/>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000087 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000087">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000019"/>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000088 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000088">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000180"/>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000089 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000089">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000045"/>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000090 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000090">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000045"/>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000180 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000180">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000037"/>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000181 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000181">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000180"/>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000182 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000182">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000030"/>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000183 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000183">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000050"/>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000184 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000184">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000183"/>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000185 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000185">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000184"/>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000186 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000186">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000030"/>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000187 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000187">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000182"/>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000188 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000188">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000036"/>
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000046"/>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000189 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000189">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000019"/>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000190 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000190">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000189"/>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000191 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000191">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000019"/>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000192 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000192">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000191"/>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000193 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000193">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000003"/>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://identifiers.org/mamo#hasFeature"/>
-                <someValuesFrom>
-                    <Class>
-                        <intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000062"/>
-                            <Class>
-                                <complementOf rdf:resource="http://identifiers.org/mamo/MAMO_0000063"/>
-                            </Class>
-                        </intersectionOf>
-                    </Class>
-                </someValuesFrom>
-            </Restriction>
-        </rdfs:subClassOf>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000194 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000194">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000193"/>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000195 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000195">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000193"/>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000196 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000196">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000193"/>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000197 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000197">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000193"/>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000198 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000198">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000045"/>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000199 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000199">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000198"/>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://identifiers.org/mamo#hasFeature"/>
-                <someValuesFrom rdf:resource="http://identifiers.org/mamo/MAMO_0000059"/>
-            </Restriction>
-        </rdfs:subClassOf>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000200 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000200">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000198"/>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000202 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000202">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000036"/>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000203 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000203">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000019"/>
-    </Class>
-    
-
-
-    <!-- http://identifiers.org/mamo/MAMO_0000204 -->
-
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000204">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000185"/>
-    </Class>
+    <Class rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
     
 
 
-    <!-- http://identifiers.org/mamo/MAMO_0000205 -->
+    <!-- http://www.w3.org/2000/10/swap/pim/contact#Person -->
 
-    <Class rdf:about="http://identifiers.org/mamo/MAMO_0000205">
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000180"/>
+    <Class rdf:about="http://www.w3.org/2000/10/swap/pim/contact#Person">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     </Class>
     
 
@@ -1250,11 +465,353 @@
     <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://identifiers.org/mamo#isUsedToModel"/>
-                <allValuesFrom rdf:resource="http://identifiers.org/mamo/MAMO_0000180"/>
+                <onProperty rdf:resource="http://www.w3.org/2008/05/skos#inScheme"/>
+                <allValuesFrom rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://xmlns.com/foaf/0.1/page"/>
+                <allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.w3.org/2008/05/skos#mappingRelation"/>
+                <allValuesFrom rdf:resource="http://www.w3.org/2008/05/skos#Concept"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://xmlns.com/foaf/0.1/holdsAccount"/>
+                <allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://xmlns.com/foaf/0.1/workInfoHomepage"/>
+                <allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://xmlns.com/foaf/0.1/img"/>
+                <allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Image"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://w3id.org/skgo/modsci#hasApplications"/>
+                <allValuesFrom rdf:resource="https://w3id.org/skgo/modsci#ApplicationOfScience"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://xmlns.com/foaf/0.1/thumbnail"/>
+                <allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Image"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://w3id.org/skgo/modsci#discoveredByScientist"/>
+                <allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://w3id.org/skgo/modsci#isDiscoverdBy"/>
+                <allValuesFrom>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+                            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+                        </unionOf>
+                    </Class>
+                </allValuesFrom>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://xmlns.com/foaf/0.1/weblog"/>
+                <allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.w3.org/2008/05/skos#memberList"/>
+                <allValuesFrom rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://xmlns.com/foaf/0.1/publications"/>
+                <allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://xmlns.com/foaf/0.1/account"/>
+                <allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://xmlns.com/foaf/0.1/openid"/>
+                <allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.w3.org/2008/05/skos#topConceptOf"/>
+                <allValuesFrom rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://xmlns.com/foaf/0.1/homepage"/>
+                <allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://w3id.org/skgo/modsci#InspiredFrom"/>
+                <allValuesFrom rdf:resource="https://w3id.org/skgo/modsci#ScientificDiscovery"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://xmlns.com/foaf/0.1/interest"/>
+                <allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://xmlns.com/foaf/0.1/workplaceHomepage"/>
+                <allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.w3.org/2008/05/skos#semanticRelation"/>
+                <allValuesFrom rdf:resource="http://www.w3.org/2008/05/skos#Concept"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://xmlns.com/foaf/0.1/knows"/>
+                <allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://xmlns.com/foaf/0.1/based_near"/>
+                <allValuesFrom rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://xmlns.com/foaf/0.1/isPrimaryTopicOf"/>
+                <allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://xmlns.com/foaf/0.1/tipjar"/>
+                <allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://xmlns.com/foaf/0.1/depiction"/>
+                <allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Image"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.w3.org/2008/05/skos#hasTopConcept"/>
+                <allValuesFrom rdf:resource="http://www.w3.org/2008/05/skos#Concept"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://xmlns.com/foaf/0.1/accountServiceHomepage"/>
+                <allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://xmlns.com/foaf/0.1/schoolHomepage"/>
+                <allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
             </Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing -->
+
+    <Class rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+    <Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#Collection -->
+
+    <Class rdf:about="http://www.w3.org/2008/05/skos#Collection"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#Concept -->
+
+    <Class rdf:about="http://www.w3.org/2008/05/skos#Concept"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#ConceptScheme -->
+
+    <Class rdf:about="http://www.w3.org/2008/05/skos#ConceptScheme"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#OrderedCollection -->
+
+    <Class rdf:about="http://www.w3.org/2008/05/skos#OrderedCollection">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2008/05/skos#Collection"/>
+    </Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Document -->
+
+    <Class rdf:about="http://xmlns.com/foaf/0.1/Document">
+        <rdfs:subClassOf rdf:resource="http://schema.org/CreativeWork"/>
+    </Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Group -->
+
+    <Class rdf:about="http://xmlns.com/foaf/0.1/Group"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Image -->
+
+    <Class rdf:about="http://xmlns.com/foaf/0.1/Image">
+        <rdfs:subClassOf rdf:resource="http://schema.org/ImageObject"/>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+    </Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/OnlineAccount -->
+
+    <Class rdf:about="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/OnlineChatAccount -->
+
+    <Class rdf:about="http://xmlns.com/foaf/0.1/OnlineChatAccount">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+    </Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/OnlineEcommerceAccount -->
+
+    <Class rdf:about="http://xmlns.com/foaf/0.1/OnlineEcommerceAccount">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+    </Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/OnlineGamingAccount -->
+
+    <Class rdf:about="http://xmlns.com/foaf/0.1/OnlineGamingAccount">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+    </Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Organization -->
+
+    <Class rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+    <Class rdf:about="http://xmlns.com/foaf/0.1/Person">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Person"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+    </Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/PersonalProfileDocument -->
+
+    <Class rdf:about="http://xmlns.com/foaf/0.1/PersonalProfileDocument">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+    </Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Project -->
+
+    <Class rdf:about="http://xmlns.com/foaf/0.1/Project"/>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Algorithms -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Algorithms"/>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#ApplicationOfScience -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#ApplicationOfScience"/>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Bioinformatics -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Bioinformatics">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Biology"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Biology -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Biology"/>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#ClassificationAlgorithms -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#ClassificationAlgorithms">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Algorithms"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#ScientificDiscovery -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#ScientificDiscovery"/>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#ScientificInstrument -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#ScientificInstrument"/>
     
 
 
@@ -1266,357 +823,185 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <Class>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
-        <intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000010"/>
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000062"/>
-        </intersectionOf>
-    </Class>
-    <Class>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
-        <intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000058"/>
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000061"/>
-        </intersectionOf>
-    </Class>
-    <Class>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
-        <intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000055"/>
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000061"/>
-        </intersectionOf>
-    </Class>
     <Restriction>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
-        <onProperty rdf:resource="http://identifiers.org/mamo#lacksFeature"/>
-        <someValuesFrom>
-            <Class>
-                <unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000010"/>
-                    <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000027"/>
-                    <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000037"/>
-                </unionOf>
-            </Class>
-        </someValuesFrom>
-    </Restriction>
-    <Class>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
-        <intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://identifiers.org/mamo#MAMO_0000208"/>
-            <rdf:Description rdf:about="http://identifiers.org/mamo#MAMO_0000210"/>
-        </intersectionOf>
-    </Class>
-    <Class>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
-        <intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000037"/>
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000055"/>
-        </intersectionOf>
-    </Class>
-    <Class>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
-        <intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000010"/>
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000055"/>
-        </intersectionOf>
-    </Class>
-    <Class>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
-        <intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000039"/>
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000202"/>
-        </intersectionOf>
-    </Class>
-    <Class>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
-        <intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000038"/>
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000202"/>
-        </intersectionOf>
-    </Class>
-    <Class>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
-        <intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000189"/>
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000191"/>
-        </intersectionOf>
-    </Class>
-    <Class>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
-        <intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000010"/>
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000061"/>
-        </intersectionOf>
-    </Class>
-    <Class>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
-        <intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000022"/>
-            <Restriction>
-                <onProperty rdf:resource="http://identifiers.org/mamo#hasFeature"/>
-                <someValuesFrom rdf:resource="http://identifiers.org/mamo/MAMO_0000058"/>
-            </Restriction>
-        </intersectionOf>
-    </Class>
-    <Class>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
-        <intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000010"/>
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000058"/>
-        </intersectionOf>
-    </Class>
-    <Class>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
-        <intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000027"/>
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000062"/>
-        </intersectionOf>
-    </Class>
-    <Class>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
-        <intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000046"/>
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000047"/>
-        </intersectionOf>
-    </Class>
-    <Class>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
-        <intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://identifiers.org/mamo#MAMO_0000207"/>
-            <rdf:Description rdf:about="http://identifiers.org/mamo#MAMO_0000209"/>
-        </intersectionOf>
-    </Class>
-    <Class>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
-        <intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000010"/>
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000037"/>
-        </intersectionOf>
-    </Class>
-    <Class>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
-        <intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000055"/>
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000062"/>
-        </intersectionOf>
-    </Class>
-    <Class>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
-        <intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000010"/>
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000027"/>
-        </intersectionOf>
-    </Class>
-    <Class>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
-        <intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000059"/>
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000060"/>
-        </intersectionOf>
-    </Class>
-    <Class>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
-        <intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000030"/>
-            <Restriction>
-                <onProperty rdf:resource="http://identifiers.org/mamo#hasFeature"/>
-                <someValuesFrom rdf:resource="http://identifiers.org/mamo/MAMO_0000058"/>
-            </Restriction>
-        </intersectionOf>
-    </Class>
-    <Restriction>
-        <rdfs:subClassOf rdf:resource="http://identifiers.org/mamo/MAMO_0000003"/>
-        <onProperty rdf:resource="http://identifiers.org/mamo#isUsedToModel"/>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Image"/>
+        <onProperty rdf:resource="http://xmlns.com/foaf/0.1/depicts"/>
         <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     </Restriction>
     <Class>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
         <intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://identifiers.org/mamo#MAMO_0000209"/>
-            <rdf:Description rdf:about="http://identifiers.org/mamo#MAMO_0000210"/>
-        </intersectionOf>
-    </Class>
-    <Class>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
-        <intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000058"/>
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000062"/>
-        </intersectionOf>
-    </Class>
-    <Class>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
-        <intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://identifiers.org/mamo#MAMO_0000207"/>
-            <rdf:Description rdf:about="http://identifiers.org/mamo#MAMO_0000208"/>
-        </intersectionOf>
-    </Class>
-    <Class>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
-        <intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000046"/>
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000048"/>
-        </intersectionOf>
-    </Class>
-    <Class>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
-        <intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://identifiers.org/mamo#MAMO_0000208"/>
-            <rdf:Description rdf:about="http://identifiers.org/mamo#MAMO_0000209"/>
-        </intersectionOf>
-    </Class>
-    <Class>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
-        <intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000027"/>
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000032"/>
-        </intersectionOf>
-    </Class>
-    <Class>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
-        <intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000037"/>
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000062"/>
-        </intersectionOf>
-    </Class>
-    <Class>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
-        <intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000032"/>
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000037"/>
-        </intersectionOf>
-    </Class>
-    <Class>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
-        <intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000027"/>
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000061"/>
-        </intersectionOf>
-    </Class>
-    <Class>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
-        <intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000037"/>
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000058"/>
-        </intersectionOf>
-    </Class>
-    <Class>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
-        <intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000056"/>
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000057"/>
-        </intersectionOf>
-    </Class>
-    <Class>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
-        <intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000037"/>
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000061"/>
-        </intersectionOf>
-    </Class>
-    <Class>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
-        <intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000038"/>
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000039"/>
-        </intersectionOf>
-    </Class>
-    <Class>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
-        <intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000027"/>
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000037"/>
-        </intersectionOf>
-    </Class>
-    <Class>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
-        <intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000044"/>
-            <Restriction>
-                <onProperty rdf:resource="http://identifiers.org/mamo#hasFeature"/>
-                <someValuesFrom rdf:resource="http://identifiers.org/mamo/MAMO_0000058"/>
-            </Restriction>
-        </intersectionOf>
-    </Class>
-    <Class>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
-        <intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000047"/>
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000048"/>
-        </intersectionOf>
-    </Class>
-    <Class>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
-        <intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000027"/>
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000055"/>
-        </intersectionOf>
-    </Class>
-    <Class>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
-        <intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000017"/>
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000018"/>
+            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Document"/>
+            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
         </intersectionOf>
     </Class>
     <Restriction>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
-        <onProperty rdf:resource="http://identifiers.org/mamo#hasFeature"/>
-        <someValuesFrom>
-            <Class>
-                <unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000010"/>
-                    <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000027"/>
-                    <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000037"/>
-                </unionOf>
-            </Class>
-        </someValuesFrom>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Algorithms"/>
+        <onProperty rdf:resource="https://w3id.org/skgo/modsci#InspiredFrom"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     </Restriction>
     <Class>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
         <intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000027"/>
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000058"/>
+            <rdf:Description rdf:about="http://www.w3.org/2008/05/skos#Concept"/>
+            <rdf:Description rdf:about="http://www.w3.org/2008/05/skos#ConceptScheme"/>
+        </intersectionOf>
+    </Class>
+    <Restriction>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+        <onProperty rdf:resource="http://xmlns.com/foaf/0.1/primaryTopic"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Restriction>
+    <Class>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Document"/>
+            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Project"/>
+        </intersectionOf>
+    </Class>
+    <Restriction>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <onProperty rdf:resource="http://xmlns.com/foaf/0.1/workInfoHomepage"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Restriction>
+    <Restriction>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2008/05/skos#Concept"/>
+        <onProperty rdf:resource="http://www.w3.org/2008/05/skos#topConceptOf"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Restriction>
+    <Class>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.w3.org/2008/05/skos#Collection"/>
+            <rdf:Description rdf:about="http://www.w3.org/2008/05/skos#ConceptScheme"/>
+        </intersectionOf>
+    </Class>
+    <Restriction>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+        <onProperty rdf:resource="http://xmlns.com/foaf/0.1/based_near"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Restriction>
+    <Restriction>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Group"/>
+        <onProperty rdf:resource="http://xmlns.com/foaf/0.1/member"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Restriction>
+    <Restriction>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Image"/>
+        <onProperty rdf:resource="http://xmlns.com/foaf/0.1/thumbnail"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Restriction>
+    <Restriction>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2008/05/skos#OrderedCollection"/>
+        <onProperty rdf:resource="http://www.w3.org/2008/05/skos#memberList"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Restriction>
+    <Class>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+        </intersectionOf>
+    </Class>
+    <Restriction>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <onProperty rdf:resource="http://xmlns.com/foaf/0.1/img"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Restriction>
+    <Restriction>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <onProperty rdf:resource="http://xmlns.com/foaf/0.1/pastProject"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Restriction>
+    <Restriction>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2008/05/skos#Collection"/>
+        <onProperty rdf:resource="http://www.w3.org/2008/05/skos#member"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Restriction>
+    <Restriction>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2008/05/skos#Concept"/>
+        <onProperty rdf:resource="http://www.w3.org/2008/05/skos#semanticRelation"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Restriction>
+    <Restriction>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <onProperty rdf:resource="http://xmlns.com/foaf/0.1/knows"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Restriction>
+    <Restriction>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <onProperty rdf:resource="http://xmlns.com/foaf/0.1/schoolHomepage"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Restriction>
+    <Restriction>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <onProperty rdf:resource="http://xmlns.com/foaf/0.1/currentProject"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Restriction>
+    <Restriction>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
+        <onProperty rdf:resource="http://www.w3.org/2008/05/skos#hasTopConcept"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Restriction>
+    <Restriction>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <onProperty rdf:resource="http://xmlns.com/foaf/0.1/workplaceHomepage"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Restriction>
+    <Restriction>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2008/05/skos#Concept"/>
+        <onProperty rdf:resource="http://www.w3.org/2008/05/skos#mappingRelation"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Restriction>
+    <Restriction>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+        <onProperty rdf:resource="http://xmlns.com/foaf/0.1/accountServiceHomepage"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Restriction>
+    <Class>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.w3.org/2008/05/skos#Collection"/>
+            <rdf:Description rdf:about="http://www.w3.org/2008/05/skos#Concept"/>
         </intersectionOf>
     </Class>
     <Class>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
         <intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000055"/>
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000058"/>
+            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Project"/>
         </intersectionOf>
     </Class>
-    <Class>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
-        <intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000061"/>
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000062"/>
-        </intersectionOf>
-    </Class>
-    <Class>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
-        <intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000010"/>
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000032"/>
-        </intersectionOf>
-    </Class>
-    <Class>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
-        <intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://identifiers.org/mamo#MAMO_0000207"/>
-            <rdf:Description rdf:about="http://identifiers.org/mamo#MAMO_0000210"/>
-        </intersectionOf>
-    </Class>
-    <Class>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
-        <intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://identifiers.org/mamo/MAMO_0000041"/>
-            <Restriction>
-                <onProperty rdf:resource="http://identifiers.org/mamo#hasFeature"/>
-                <someValuesFrom rdf:resource="http://identifiers.org/mamo/MAMO_0000058"/>
-            </Restriction>
-        </intersectionOf>
-    </Class>
+    <Restriction>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <onProperty rdf:resource="https://w3id.org/skgo/modsci#InterestedInStudyingPhenomenon"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Restriction>
+    <Restriction>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ApplicationOfScience"/>
+        <onProperty rdf:resource="https://w3id.org/skgo/modsci#isApplicationOfScience"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Restriction>
+    <Restriction>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <onProperty rdf:resource="http://xmlns.com/foaf/0.1/focus"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Restriction>
+    <Restriction>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+        <onProperty rdf:resource="http://xmlns.com/foaf/0.1/topic"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Restriction>
+    <Restriction>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+        <onProperty rdf:resource="https://w3id.org/skgo/modsci#InstrumentusedInScience"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Restriction>
+    <Restriction>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <onProperty rdf:resource="http://xmlns.com/foaf/0.1/publications"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Restriction>
 </rdf:RDF>
 
 
