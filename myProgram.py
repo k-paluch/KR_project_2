@@ -2,7 +2,23 @@ import os
 from random import randint, seed,shuffle
 import time
 
-
+def saveclasses(file):
+	tmp = {}
+	elements = []
+	with open(file, "r") as file:
+		for line in file:
+			words = line.split()
+			if(words[0][1:-1] not in elements):
+				tmp.update({words[0][1:-1]: 1})
+				elements.append(words[0][1:-1])
+			else:
+				tmp.update({words[0][1:-1]: tmp[words[0][1:-1]]+1})
+			if(words[2][1:-1] not in elements):
+				tmp.update({words[2][1:-1]: 1})
+				elements.append(words[2][1:-1])
+			else:
+				tmp.update({words[2][1:-1]: tmp[words[2][1:-1]]+1})
+	return tmp, elements
 
 seed(1)
 # This is an example puython programme which shows how to use the different stand-alone versions of OWL reasoners and forgetting programme
@@ -24,7 +40,7 @@ forgetOntology = "./result.owl"
 # 2 - SHQTBoxForgetter
 # 3 - ALCOntologyForgetter
 
-method = "1" #
+method = "3" #
 
 # Choose the symbols which you want to forget.
 signature = "./signature.txt"
@@ -53,41 +69,27 @@ os.system('java -jar kr_functions.jar ' + 'saveAllSubClasses' + " " + inputOntol
 # --> uncomment the following line to run this function
 # os.system('java -cp lethe-standalone.jar uk.ac.man.cs.lethe.internal.application.ForgettingConsoleApplication --owlFile ' + inputOntology + ' --method ' + method  + ' --signature ' + signature)
 
-heur1 = {}
-elements = []
-
-with open("subClasses.nt", "r") as file:
-	for line in file:
-		words = line.split()
-		if(words[0][1:-1] not in elements):
-			heur1.update({words[0][1:-1]: 1})
-			elements.append(words[0][1:-1])
-		else:
-			heur1.update({words[0][1:-1]: heur1[words[0][1:-1]]+1})
-		if(words[2][1:-1] not in elements):
-			heur1.update({words[2][1:-1]: 1})
-			elements.append(words[2][1:-1])
-		else:
-			heur1.update({words[2][1:-1]: heur1[words[2][1:-1]]+1})
 
 
-heur1 = sorted(heur1.items(), key=lambda kv: kv[1])
-tmp = []
-for x in heur1:
-	tmp.append(x[0])
+classes = saveclasses('subClasses.nt')
+tmp = classes[0]
+elements = classes[1]
+
+tmp = sorted(tmp.items(), key=lambda kv: kv[1])
+heur1 = []
+for x in tmp:
+	heur1.append(x[0])
 # t = [k  for  k in  heur1.keys()]
 heur2 = shuffle(elements)
 
 # set heuristic
-elements = tmp
+elements = heur1
 
 to_forget = []
 
 for x in reversed(elements):
-	# tmp = randint(0,len(elements)-1)
-	if(x!='https://w3id.org/skgo/modsci#Bioinformatics' and x!= 'https://w3id.org/skgo/modsci#Biology'):
+	if(x!='https://w3id.org/skgo/modsci#NaturalLanguageProcessing' and x!= 'https://w3id.org/skgo/modsci#ModernScience'):
 		to_forget.append(x)
-		print(x)
 		elements.pop(elements.index(x))
 
 first = 0
@@ -103,12 +105,6 @@ for t in to_forget:
 	else:
 		os.system('java -cp lethe-standalone.jar uk.ac.man.cs.lethe.internal.application.ForgettingConsoleApplication --owlFile ' + forgetOntology + ' --method ' + method  + ' --signature ' + signature)
 	n+=1
-	# os.system('java -jar kr_functions.jar ' + 'saveAllSubClasses' + " " + forgetOntology)
-	# os.system('java -jar kr_functions.jar ' + 'saveAllExplanations' + " " + forgetOntology + " " + inputSubclassStatements)
-	# time.sleep(5)
-	print(n)
 
 os.system('java -jar kr_functions.jar ' + 'saveAllSubClasses' + " " + forgetOntology)
 os.system('java -jar kr_functions.jar ' + 'saveAllExplanations' + " " + inputOntology + " " + inputSubclassStatements)
-
-print(elements)

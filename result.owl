@@ -1,10 +1,12 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
      xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:skos2="http://www.w3.org/2008/05/skos#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:modsci="https://w3id.org/skgo/modsci#">
     
 
 
@@ -19,90 +21,15 @@
     
 
 
-    <!-- http://www.w3.org/2008/05/skos#broadMatch -->
-
-    <ObjectProperty rdf:about="http://www.w3.org/2008/05/skos#broadMatch">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2008/05/skos#broader"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2008/05/skos#mappingRelation"/>
-    </ObjectProperty>
-    
-
-
-    <!-- http://www.w3.org/2008/05/skos#broader -->
-
-    <ObjectProperty rdf:about="http://www.w3.org/2008/05/skos#broader">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2008/05/skos#broaderTransitive"/>
-    </ObjectProperty>
-    
-
-
-    <!-- http://www.w3.org/2008/05/skos#broaderTransitive -->
-
-    <ObjectProperty rdf:about="http://www.w3.org/2008/05/skos#broaderTransitive">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2008/05/skos#semanticRelation"/>
-    </ObjectProperty>
-    
-
-
     <!-- http://www.w3.org/2008/05/skos#changeNote -->
 
-    <ObjectProperty rdf:about="http://www.w3.org/2008/05/skos#changeNote">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2008/05/skos#note"/>
-    </ObjectProperty>
-    
-
-
-    <!-- http://www.w3.org/2008/05/skos#closeMatch -->
-
-    <ObjectProperty rdf:about="http://www.w3.org/2008/05/skos#closeMatch">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2008/05/skos#mappingRelation"/>
-    </ObjectProperty>
-    
-
-
-    <!-- http://www.w3.org/2008/05/skos#definition -->
-
-    <ObjectProperty rdf:about="http://www.w3.org/2008/05/skos#definition">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2008/05/skos#note"/>
-    </ObjectProperty>
-    
-
-
-    <!-- http://www.w3.org/2008/05/skos#editorialNote -->
-
-    <ObjectProperty rdf:about="http://www.w3.org/2008/05/skos#editorialNote">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2008/05/skos#note"/>
-    </ObjectProperty>
-    
-
-
-    <!-- http://www.w3.org/2008/05/skos#exactMatch -->
-
-    <ObjectProperty rdf:about="http://www.w3.org/2008/05/skos#exactMatch">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2008/05/skos#closeMatch"/>
-    </ObjectProperty>
-    
-
-
-    <!-- http://www.w3.org/2008/05/skos#example -->
-
-    <ObjectProperty rdf:about="http://www.w3.org/2008/05/skos#example">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2008/05/skos#note"/>
-    </ObjectProperty>
+    <ObjectProperty rdf:about="http://www.w3.org/2008/05/skos#changeNote"/>
     
 
 
     <!-- http://www.w3.org/2008/05/skos#hasTopConcept -->
 
     <ObjectProperty rdf:about="http://www.w3.org/2008/05/skos#hasTopConcept"/>
-    
-
-
-    <!-- http://www.w3.org/2008/05/skos#historyNote -->
-
-    <ObjectProperty rdf:about="http://www.w3.org/2008/05/skos#historyNote">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2008/05/skos#note"/>
-    </ObjectProperty>
     
 
 
@@ -130,62 +57,6 @@
     
 
 
-    <!-- http://www.w3.org/2008/05/skos#narrowMatch -->
-
-    <ObjectProperty rdf:about="http://www.w3.org/2008/05/skos#narrowMatch">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2008/05/skos#mappingRelation"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2008/05/skos#narrower"/>
-    </ObjectProperty>
-    
-
-
-    <!-- http://www.w3.org/2008/05/skos#narrower -->
-
-    <ObjectProperty rdf:about="http://www.w3.org/2008/05/skos#narrower">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2008/05/skos#narrowerTransitive"/>
-    </ObjectProperty>
-    
-
-
-    <!-- http://www.w3.org/2008/05/skos#narrowerTransitive -->
-
-    <ObjectProperty rdf:about="http://www.w3.org/2008/05/skos#narrowerTransitive">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2008/05/skos#semanticRelation"/>
-    </ObjectProperty>
-    
-
-
-    <!-- http://www.w3.org/2008/05/skos#note -->
-
-    <ObjectProperty rdf:about="http://www.w3.org/2008/05/skos#note"/>
-    
-
-
-    <!-- http://www.w3.org/2008/05/skos#related -->
-
-    <ObjectProperty rdf:about="http://www.w3.org/2008/05/skos#related">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2008/05/skos#semanticRelation"/>
-    </ObjectProperty>
-    
-
-
-    <!-- http://www.w3.org/2008/05/skos#relatedMatch -->
-
-    <ObjectProperty rdf:about="http://www.w3.org/2008/05/skos#relatedMatch">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2008/05/skos#mappingRelation"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2008/05/skos#related"/>
-    </ObjectProperty>
-    
-
-
-    <!-- http://www.w3.org/2008/05/skos#scopeNote -->
-
-    <ObjectProperty rdf:about="http://www.w3.org/2008/05/skos#scopeNote">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2008/05/skos#note"/>
-    </ObjectProperty>
-    
-
-
     <!-- http://www.w3.org/2008/05/skos#semanticRelation -->
 
     <ObjectProperty rdf:about="http://www.w3.org/2008/05/skos#semanticRelation"/>
@@ -194,9 +65,7 @@
 
     <!-- http://www.w3.org/2008/05/skos#topConceptOf -->
 
-    <ObjectProperty rdf:about="http://www.w3.org/2008/05/skos#topConceptOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2008/05/skos#inScheme"/>
-    </ObjectProperty>
+    <ObjectProperty rdf:about="http://www.w3.org/2008/05/skos#topConceptOf"/>
     
 
 
@@ -209,6 +78,12 @@
     <!-- http://xmlns.com/foaf/0.1/accountServiceHomepage -->
 
     <ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/accountServiceHomepage"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/aimChatID -->
+
+    <ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/aimChatID"/>
     
 
 
@@ -250,18 +125,19 @@
 
     <!-- http://xmlns.com/foaf/0.1/homepage -->
 
-    <ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/homepage">
-        <rdfs:subPropertyOf rdf:resource="http://xmlns.com/foaf/0.1/isPrimaryTopicOf"/>
-        <rdfs:subPropertyOf rdf:resource="http://xmlns.com/foaf/0.1/page"/>
-    </ObjectProperty>
+    <ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/homepage"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/icqChatID -->
+
+    <ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/icqChatID"/>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/img -->
 
-    <ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/img">
-        <rdfs:subPropertyOf rdf:resource="http://xmlns.com/foaf/0.1/depiction"/>
-    </ObjectProperty>
+    <ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/img"/>
     
 
 
@@ -273,9 +149,13 @@
 
     <!-- http://xmlns.com/foaf/0.1/isPrimaryTopicOf -->
 
-    <ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/isPrimaryTopicOf">
-        <rdfs:subPropertyOf rdf:resource="http://xmlns.com/foaf/0.1/page"/>
-    </ObjectProperty>
+    <ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/isPrimaryTopicOf"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/jabberID -->
+
+    <ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/jabberID"/>
     
 
 
@@ -285,17 +165,45 @@
     
 
 
+    <!-- http://xmlns.com/foaf/0.1/made -->
+
+    <ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/made"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/maker -->
+
+    <ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/maker"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/mbox -->
+
+    <ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/mbox"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/mbox_sha1sum -->
+
+    <ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/mbox_sha1sum"/>
+    
+
+
     <!-- http://xmlns.com/foaf/0.1/member -->
 
     <ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/member"/>
     
 
 
+    <!-- http://xmlns.com/foaf/0.1/msnChatID -->
+
+    <ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/msnChatID"/>
+    
+
+
     <!-- http://xmlns.com/foaf/0.1/openid -->
 
-    <ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/openid">
-        <rdfs:subPropertyOf rdf:resource="http://xmlns.com/foaf/0.1/isPrimaryTopicOf"/>
-    </ObjectProperty>
+    <ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/openid"/>
     
 
 
@@ -337,9 +245,7 @@
 
     <!-- http://xmlns.com/foaf/0.1/tipjar -->
 
-    <ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/tipjar">
-        <rdfs:subPropertyOf rdf:resource="http://xmlns.com/foaf/0.1/page"/>
-    </ObjectProperty>
+    <ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/tipjar"/>
     
 
 
@@ -349,11 +255,15 @@
     
 
 
+    <!-- http://xmlns.com/foaf/0.1/topic_interest -->
+
+    <ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/topic_interest"/>
+    
+
+
     <!-- http://xmlns.com/foaf/0.1/weblog -->
 
-    <ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/weblog">
-        <rdfs:subPropertyOf rdf:resource="http://xmlns.com/foaf/0.1/page"/>
-    </ObjectProperty>
+    <ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/weblog"/>
     
 
 
@@ -366,6 +276,12 @@
     <!-- http://xmlns.com/foaf/0.1/workplaceHomepage -->
 
     <ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/workplaceHomepage"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/yahooChatID -->
+
+    <ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/yahooChatID"/>
     
 
 
@@ -387,6 +303,18 @@
     
 
 
+    <!-- https://w3id.org/skgo/modsci#appliesLawsFrom -->
+
+    <ObjectProperty rdf:about="https://w3id.org/skgo/modsci#appliesLawsFrom"/>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#discoveredByScience -->
+
+    <ObjectProperty rdf:about="https://w3id.org/skgo/modsci#discoveredByScience"/>
+    
+
+
     <!-- https://w3id.org/skgo/modsci#discoveredByScientist -->
 
     <ObjectProperty rdf:about="https://w3id.org/skgo/modsci#discoveredByScientist"/>
@@ -396,6 +324,24 @@
     <!-- https://w3id.org/skgo/modsci#hasApplications -->
 
     <ObjectProperty rdf:about="https://w3id.org/skgo/modsci#hasApplications"/>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#hasCloseRelationshipTo -->
+
+    <ObjectProperty rdf:about="https://w3id.org/skgo/modsci#hasCloseRelationshipTo"/>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#hasCollaborationWith -->
+
+    <ObjectProperty rdf:about="https://w3id.org/skgo/modsci#hasCollaborationWith"/>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#hasMethodsInspiredFrom -->
+
+    <ObjectProperty rdf:about="https://w3id.org/skgo/modsci#hasMethodsInspiredFrom"/>
     
 
 
@@ -411,6 +357,30 @@
     
 
 
+    <!-- https://w3id.org/skgo/modsci#suppliesSubstancesTo -->
+
+    <ObjectProperty rdf:about="https://w3id.org/skgo/modsci#suppliesSubstancesTo"/>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#takeSunstancesFrom -->
+
+    <ObjectProperty rdf:about="https://w3id.org/skgo/modsci#takeSunstancesFrom"/>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#usesMethodsFrom -->
+
+    <ObjectProperty rdf:about="https://w3id.org/skgo/modsci#usesMethodsFrom"/>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#usesTechniquesFrom -->
+
+    <ObjectProperty rdf:about="https://w3id.org/skgo/modsci#usesTechniquesFrom"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -419,6 +389,14 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.org/dc/terms/Agent -->
+
+    <Class rdf:about="http://purl.org/dc/terms/Agent">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </Class>
     
 
 
@@ -465,31 +443,25 @@
     <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://www.w3.org/2008/05/skos#inScheme"/>
-                <allValuesFrom rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
+                <onProperty rdf:resource="https://w3id.org/skgo/modsci#hasCollaborationWith"/>
+                <allValuesFrom rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
             </Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://xmlns.com/foaf/0.1/page"/>
+                <onProperty rdf:resource="https://w3id.org/skgo/modsci#InterestedInStudyingPhenomenon"/>
+                <allValuesFrom rdf:resource="https://w3id.org/skgo/modsci#Phenomenon"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://xmlns.com/foaf/0.1/accountServiceHomepage"/>
                 <allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
             </Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://www.w3.org/2008/05/skos#mappingRelation"/>
-                <allValuesFrom rdf:resource="http://www.w3.org/2008/05/skos#Concept"/>
-            </Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://xmlns.com/foaf/0.1/holdsAccount"/>
-                <allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/OnlineAccount"/>
-            </Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://xmlns.com/foaf/0.1/workInfoHomepage"/>
+                <onProperty rdf:resource="http://xmlns.com/foaf/0.1/isPrimaryTopicOf"/>
                 <allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -501,39 +473,14 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="https://w3id.org/skgo/modsci#hasApplications"/>
-                <allValuesFrom rdf:resource="https://w3id.org/skgo/modsci#ApplicationOfScience"/>
+                <onProperty rdf:resource="http://www.w3.org/2008/05/skos#hasTopConcept"/>
+                <allValuesFrom rdf:resource="http://www.w3.org/2008/05/skos#Concept"/>
             </Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://xmlns.com/foaf/0.1/thumbnail"/>
-                <allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Image"/>
-            </Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://w3id.org/skgo/modsci#discoveredByScientist"/>
-                <allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-            </Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="https://w3id.org/skgo/modsci#isDiscoverdBy"/>
-                <allValuesFrom>
-                    <Class>
-                        <unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
-                            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person"/>
-                        </unionOf>
-                    </Class>
-                </allValuesFrom>
-            </Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://xmlns.com/foaf/0.1/weblog"/>
-                <allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+                <onProperty rdf:resource="https://w3id.org/skgo/modsci#hasMethodsInspiredFrom"/>
+                <allValuesFrom rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
             </Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -544,7 +491,7 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://xmlns.com/foaf/0.1/publications"/>
+                <onProperty rdf:resource="http://xmlns.com/foaf/0.1/tipjar"/>
                 <allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -556,20 +503,38 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://xmlns.com/foaf/0.1/openid"/>
-                <allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+                <onProperty rdf:resource="https://w3id.org/skgo/modsci#suppliesSubstancesTo"/>
+                <allValuesFrom rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
             </Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://www.w3.org/2008/05/skos#topConceptOf"/>
-                <allValuesFrom rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
+                <onProperty rdf:resource="https://w3id.org/skgo/modsci#usesTechniquesFrom"/>
+                <allValuesFrom rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
             </Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://xmlns.com/foaf/0.1/homepage"/>
-                <allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+                <onProperty rdf:resource="http://xmlns.com/foaf/0.1/member"/>
+                <allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://xmlns.com/foaf/0.1/maker"/>
+                <allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://w3id.org/skgo/modsci#appliesLawsFrom"/>
+                <allValuesFrom rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://xmlns.com/foaf/0.1/thumbnail"/>
+                <allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Image"/>
             </Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -580,8 +545,8 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://xmlns.com/foaf/0.1/interest"/>
-                <allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+                <onProperty rdf:resource="https://w3id.org/skgo/modsci#hasApplications"/>
+                <allValuesFrom rdf:resource="https://w3id.org/skgo/modsci#ApplicationOfScience"/>
             </Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -592,8 +557,8 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://www.w3.org/2008/05/skos#semanticRelation"/>
-                <allValuesFrom rdf:resource="http://www.w3.org/2008/05/skos#Concept"/>
+                <onProperty rdf:resource="http://www.w3.org/2008/05/skos#inScheme"/>
+                <allValuesFrom rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
             </Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -604,19 +569,37 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://xmlns.com/foaf/0.1/based_near"/>
-                <allValuesFrom rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+                <onProperty rdf:resource="https://w3id.org/skgo/modsci#hasCloseRelationshipTo"/>
+                <allValuesFrom rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
             </Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://xmlns.com/foaf/0.1/isPrimaryTopicOf"/>
+                <onProperty rdf:resource="http://www.w3.org/2008/05/skos#topConceptOf"/>
+                <allValuesFrom rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://xmlns.com/foaf/0.1/page"/>
                 <allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
             </Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://xmlns.com/foaf/0.1/tipjar"/>
+                <onProperty rdf:resource="http://xmlns.com/foaf/0.1/schoolHomepage"/>
+                <allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://xmlns.com/foaf/0.1/interest"/>
+                <allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://xmlns.com/foaf/0.1/publications"/>
                 <allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -628,20 +611,106 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://www.w3.org/2008/05/skos#hasTopConcept"/>
+                <onProperty rdf:resource="http://xmlns.com/foaf/0.1/weblog"/>
+                <allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://w3id.org/skgo/modsci#usesMethodsFrom"/>
+                <allValuesFrom>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://w3id.org/skgo/modsci#ModernScience"/>
+                            <rdf:Description rdf:about="https://w3id.org/skgo/modsci#Statistics"/>
+                        </unionOf>
+                    </Class>
+                </allValuesFrom>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://xmlns.com/foaf/0.1/based_near"/>
+                <allValuesFrom rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://w3id.org/skgo/modsci#InstrumentusedInScience"/>
+                <allValuesFrom rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://w3id.org/skgo/modsci#isApplicationOfScience"/>
+                <allValuesFrom rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://xmlns.com/foaf/0.1/workInfoHomepage"/>
+                <allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://w3id.org/skgo/modsci#discoveredByScience"/>
+                <allValuesFrom rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://w3id.org/skgo/modsci#takeSunstancesFrom"/>
+                <allValuesFrom rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.w3.org/2008/05/skos#mappingRelation"/>
                 <allValuesFrom rdf:resource="http://www.w3.org/2008/05/skos#Concept"/>
             </Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://xmlns.com/foaf/0.1/accountServiceHomepage"/>
+                <onProperty rdf:resource="http://xmlns.com/foaf/0.1/openid"/>
                 <allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
             </Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://xmlns.com/foaf/0.1/schoolHomepage"/>
+                <onProperty rdf:resource="https://w3id.org/skgo/modsci#discoveredByScientist"/>
+                <allValuesFrom rdf:resource="https://w3id.org/skgo/modsci#Scientist"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://w3id.org/skgo/modsci#isDiscoverdBy"/>
+                <allValuesFrom>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://w3id.org/skgo/modsci#ScientificOrganization"/>
+                            <rdf:Description rdf:about="https://w3id.org/skgo/modsci#Scientist"/>
+                        </unionOf>
+                    </Class>
+                </allValuesFrom>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://xmlns.com/foaf/0.1/homepage"/>
                 <allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.w3.org/2008/05/skos#semanticRelation"/>
+                <allValuesFrom rdf:resource="http://www.w3.org/2008/05/skos#Concept"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://xmlns.com/foaf/0.1/holdsAccount"/>
+                <allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/OnlineAccount"/>
             </Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
@@ -686,6 +755,14 @@
     
 
 
+    <!-- http://xmlns.com/foaf/0.1/Agent -->
+
+    <Class rdf:about="http://xmlns.com/foaf/0.1/Agent">
+        <rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/Agent"/>
+    </Class>
+    
+
+
     <!-- http://xmlns.com/foaf/0.1/Document -->
 
     <Class rdf:about="http://xmlns.com/foaf/0.1/Document">
@@ -696,7 +773,9 @@
 
     <!-- http://xmlns.com/foaf/0.1/Group -->
 
-    <Class rdf:about="http://xmlns.com/foaf/0.1/Group"/>
+    <Class rdf:about="http://xmlns.com/foaf/0.1/Group">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </Class>
     
 
 
@@ -741,7 +820,9 @@
 
     <!-- http://xmlns.com/foaf/0.1/Organization -->
 
-    <Class rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+    <Class rdf:about="http://xmlns.com/foaf/0.1/Organization">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </Class>
     
 
 
@@ -751,6 +832,7 @@
         <rdfs:subClassOf rdf:resource="http://schema.org/Person"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
     </Class>
     
 
@@ -769,9 +851,57 @@
     
 
 
+    <!-- https://w3id.org/skgo/modsci#AcidbaseChemistry -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#AcidbaseChemistry">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Chemistry"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Acoustics -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Acoustics">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#AppliedSciences"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Agriculture -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Agriculture">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#AppliedSciences"/>
+    </Class>
+    
+
+
     <!-- https://w3id.org/skgo/modsci#Algorithms -->
 
     <Class rdf:about="https://w3id.org/skgo/modsci#Algorithms"/>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#AnalyticalChemistry -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#AnalyticalChemistry">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Chemistry"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Anatomy -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Anatomy">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Anthropology -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Anthropology">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#SocialSciences"/>
+    </Class>
     
 
 
@@ -781,17 +911,238 @@
     
 
 
-    <!-- https://w3id.org/skgo/modsci#Bioinformatics -->
+    <!-- https://w3id.org/skgo/modsci#AppliedMathematics -->
 
-    <Class rdf:about="https://w3id.org/skgo/modsci#Bioinformatics">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Biology"/>
+    <Class rdf:about="https://w3id.org/skgo/modsci#AppliedMathematics">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#AppliedSciences"/>
     </Class>
     
 
 
-    <!-- https://w3id.org/skgo/modsci#Biology -->
+    <!-- https://w3id.org/skgo/modsci#AppliedPhysics -->
 
-    <Class rdf:about="https://w3id.org/skgo/modsci#Biology"/>
+    <Class rdf:about="https://w3id.org/skgo/modsci#AppliedPhysics">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Physics"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#AppliedSciences -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#AppliedSciences">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Archaeology -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Archaeology">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#SocialSciences"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Architecture -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Architecture">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#AppliedSciences"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#ArtificialIntelligence -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#ArtificialIntelligence">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Astrobiology -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Astrobiology">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Astrochemistry -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Astrochemistry">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Chemistry"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Astrometry -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Astrometry">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Astronomy"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Astronomy -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Astronomy">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#AtmosphericSciences -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#AtmosphericSciences">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#EarthScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Atomic -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Atomic">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Physics"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#BehaviouralSciences -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#BehaviouralSciences">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Biochemistry -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Biochemistry">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Chemistry"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Bioengineering -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Bioengineering">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Engineering"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Bioethics -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Bioethics">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Biogeography -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Biogeography">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Bioinformatics -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Bioinformatics">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#BiologicalPhenomena -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#BiologicalPhenomena">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#NaturalPhenomenon"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#BiomedicalEngineering -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#BiomedicalEngineering">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Biophysics -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Biophysics">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Biopsychology -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Biopsychology">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Biostatistics -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Biostatistics">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Biotechnology -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Biotechnology">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Botany -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Botany">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#CellBiology -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#CellBiology">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#ChemicalEngineering -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#ChemicalEngineering">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Chemistry"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#ChemicalPhenomena -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#ChemicalPhenomena">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#NaturalPhenomenon"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Chemistry -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Chemistry">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
     
 
 
@@ -799,6 +1150,919 @@
 
     <Class rdf:about="https://w3id.org/skgo/modsci#ClassificationAlgorithms">
         <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Algorithms"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#CognitiveScience -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#CognitiveScience">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#ColloidalChemistry -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#ColloidalChemistry">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Chemistry"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#CommunicationStudies -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#CommunicationStudies">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#SocialSciences"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#ComputationalLinguistics -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#ComputationalLinguistics">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#ComputationalPhysics -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#ComputationalPhysics">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Physics"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#ComputerScience -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#ComputerScience">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#AppliedSciences"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#CondensedMatterPhysics -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#CondensedMatterPhysics">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Physics"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Cosmology -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Cosmology">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Astronomy"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Cryobiology -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Cryobiology">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Crystallography -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Crystallography">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Chemistry"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#CulturalStudies -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#CulturalStudies">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Cybernetics -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Cybernetics">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Dentistry -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Dentistry">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#HealthSciences"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#DevelopmentalBiology -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#DevelopmentalBiology">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#EarthScience -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#EarthScience">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Ecology -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Ecology">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#EarthScience"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Economics -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Economics">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#SocialSciences"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Education -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Education">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#AppliedSciences"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Engineering -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Engineering">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#AppliedSciences"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#EnvironmentalChemistry -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#EnvironmentalChemistry">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Chemistry"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#EnvironmentalScience -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#EnvironmentalScience">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#EarthScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Epidemiology -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Epidemiology">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#HealthSciences"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Ergonomics -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Ergonomics">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#AppliedSciences"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#EthnicStudies -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#EthnicStudies">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Ethnobiology -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Ethnobiology">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Ethnology -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Ethnology">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#SocialSciences"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Ethology -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Ethology">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#BehaviouralSciences"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#EvolutionaryBiology -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#EvolutionaryBiology">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#EvolutionaryPsychology -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#EvolutionaryPsychology">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#ExperimentalPhysics -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#ExperimentalPhysics">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Physics"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#ExtragalacticAstronomy -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#ExtragalacticAstronomy">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Astronomy"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#FoodChemistry -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#FoodChemistry">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Chemistry"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Forensics -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Forensics">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#AppliedSciences"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Forestry -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Forestry">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#FormalScience -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#FormalScience">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#GalacticAstronomy -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#GalacticAstronomy">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Astronomy"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Genetics -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Genetics">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Geochemistry -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Geochemistry">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Chemistry"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Geodesy -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Geodesy">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#EarthScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Geography -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Geography">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#EarthScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#GeologicalSciences -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#GeologicalSciences">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Geology -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Geology">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#EarthScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Geomorphology -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Geomorphology">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#EarthScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Geophysics -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Geophysics">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#EarthScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Gerontology -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Gerontology">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Glaciology -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Glaciology">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#EarthScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#GreenChemistry -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#GreenChemistry">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Chemistry"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Health -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Health">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#HealthSciences -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#HealthSciences">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Healthcare -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Healthcare">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#HealthSciences"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#History -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#History">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#FormalScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#HumanSciences -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#HumanSciences">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Hydrology -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Hydrology">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#EarthScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Immunology -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Immunology">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#IndustrialScience -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#IndustrialScience">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#AppliedSciences"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#InformationScience -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#InformationScience">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#AppliedSciences"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#InorganicChemistry -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#InorganicChemistry">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Chemistry"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#LibraryScience -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#LibraryScience">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#AppliedSciences"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Limnology -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Limnology">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#EarthScience"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Linguistics -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Linguistics">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#SocialSciences"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Logic -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Logic">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#MachineLearning -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#MachineLearning">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ArtificialIntelligence"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#MarineBiology -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#MarineBiology">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#MaterialsScience -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#MaterialsScience">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Chemistry"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#MathematicalAndTheoreticalBiology -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#MathematicalAndTheoreticalBiology">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#MathematicalPhysics -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#MathematicalPhysics">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Mathematics -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Mathematics">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#FormalScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Measurement -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Measurement">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#AppliedSciences"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Mechanics -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Mechanics">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Physics"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#MedicinalChemistry -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#MedicinalChemistry">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Chemistry"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Medicine -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Medicine">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#HealthSciences"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Metabolism -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Metabolism">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Metallurgy -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Metallurgy">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Chemistry"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Metrology -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Metrology">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#AppliedSciences"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#MilitaryScience -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#MilitaryScience">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#AppliedSciences"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#ModernScience -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#ModernScience"/>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#MolecularBiology -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#MolecularBiology">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#MolecularPhysics -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#MolecularPhysics">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Chemistry"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Museology -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Museology">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#NaturalLanguageProcessing -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#NaturalLanguageProcessing">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ArtificialIntelligence"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ComputerScience"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Linguistics"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#NaturalPhenomenon -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#NaturalPhenomenon">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Phenomenon"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#NeuralEngineering -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#NeuralEngineering">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Neuroscience -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Neuroscience">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#NuclearChemistry -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#NuclearChemistry">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Chemistry"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Nursing -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Nursing">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#HealthSciences"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Oceanography -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Oceanography">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#EarthScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Optics -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Optics">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#AppliedSciences"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#OrganicChemistry -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#OrganicChemistry">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Chemistry"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#OrganometallicChemistry -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#OrganometallicChemistry">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Chemistry"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Paleoclimatology -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Paleoclimatology">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#EarthScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Paleontology -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Paleontology">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Palynology -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Palynology">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#EarthScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Parasitology -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Parasitology">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#ParticlePhysics -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#ParticlePhysics">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Physics"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Pharmacology -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Pharmacology">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Pharmacy -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Pharmacy">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#HealthSciences"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Phenomenon -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Phenomenon"/>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Philosophy -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Philosophy">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#FormalScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Photochemistry -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Photochemistry">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Chemistry"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#PhysicalChemistry -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#PhysicalChemistry">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Chemistry"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#PhysicalGeography -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#PhysicalGeography">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#EarthScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#PhysicalPhenomena -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#PhysicalPhenomena">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#NaturalPhenomenon"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Physics -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Physics">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Physiology -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Physiology">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#PlanetaryScience -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#PlanetaryScience">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Astronomy"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#PlasmaPhysics -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#PlasmaPhysics">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Physics"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#PoliticalEconomy -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#PoliticalEconomy">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#PoliticalScience -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#PoliticalScience">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#SocialSciences"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Psychology -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Psychology">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#BehaviouralSciences"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#QuantumMechanics -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#QuantumMechanics">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Physics"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Radiobiology -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Radiobiology">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Radiochemistry -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Radiochemistry">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Chemistry"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#ScienceAndTechnologyStudies -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#ScienceAndTechnologyStudies">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#ScienceStudies -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#ScienceStudies">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
     </Class>
     
 
@@ -815,6 +2079,938 @@
     
 
 
+    <!-- https://w3id.org/skgo/modsci#ScientificModeling -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#ScientificModeling">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#ScientificOrganization -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#ScientificOrganization">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Scientist -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Scientist">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Semiotics -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Semiotics">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#SocialSciences"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#SocialPhenomenon -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#SocialPhenomenon">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Phenomenon"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#SocialPsychology -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#SocialPsychology">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#BehaviouralSciences"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#SocialSciences -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#SocialSciences">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#SocialWork -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#SocialWork">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#HealthSciences"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Sociobiology -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Sociobiology">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#BehaviouralSciences"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Sociology -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Sociology">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#SocialSciences"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#SoilBiology -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#SoilBiology">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#SoilScience -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#SoilScience">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#EarthScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#SolidMechanics -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#SolidMechanics">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Physics"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#SolidStateChemistry -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#SolidStateChemistry">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Chemistry"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#SpaceScience -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#SpaceScience">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#EarthScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#SportsScience -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#SportsScience">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#AppliedSciences"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Statistics -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Statistics">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#FormalScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#StellarAstronomy -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#StellarAstronomy">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Astronomy"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Stereochemistry -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Stereochemistry">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Chemistry"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#SupramolecularChemistry -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#SupramolecularChemistry">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Chemistry"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#SurfaceChemistry -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#SurfaceChemistry">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Chemistry"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#SystemsScience -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#SystemsScience">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Technology -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Technology">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#FormalScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#TheoreticalBiology -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#TheoreticalBiology">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#TheoreticalChemistry -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#TheoreticalChemistry">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Chemistry"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#TheoreticalLinguistics -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#TheoreticalLinguistics">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#FormalScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Thermodynamics -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Thermodynamics">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Physics"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Toxicology -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Toxicology">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Transdisciplinarity -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Transdisciplinarity">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#UrbanPlanning -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#UrbanPlanning">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#VeterinaryMedicine -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#VeterinaryMedicine">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#HealthSciences"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Volcanology -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Volcanology">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#EarthScience"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Zoology -->
+
+    <Class rdf:about="https://w3id.org/skgo/modsci#Zoology">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.com/ns/foo#_:genid1 -->
+
+    <NamedIndividual rdf:about="http://example.com/ns/foo#_:genid1"/>
+    
+
+
+    <!-- http://example.com/ns/foo#_:genid10 -->
+
+    <NamedIndividual rdf:about="http://example.com/ns/foo#_:genid10"/>
+    
+
+
+    <!-- http://example.com/ns/foo#_:genid11 -->
+
+    <NamedIndividual rdf:about="http://example.com/ns/foo#_:genid11"/>
+    
+
+
+    <!-- http://example.com/ns/foo#_:genid12 -->
+
+    <NamedIndividual rdf:about="http://example.com/ns/foo#_:genid12"/>
+    
+
+
+    <!-- http://example.com/ns/foo#_:genid13 -->
+
+    <NamedIndividual rdf:about="http://example.com/ns/foo#_:genid13"/>
+    
+
+
+    <!-- http://example.com/ns/foo#_:genid14 -->
+
+    <NamedIndividual rdf:about="http://example.com/ns/foo#_:genid14"/>
+    
+
+
+    <!-- http://example.com/ns/foo#_:genid15 -->
+
+    <NamedIndividual rdf:about="http://example.com/ns/foo#_:genid15"/>
+    
+
+
+    <!-- http://example.com/ns/foo#_:genid16 -->
+
+    <NamedIndividual rdf:about="http://example.com/ns/foo#_:genid16"/>
+    
+
+
+    <!-- http://example.com/ns/foo#_:genid17 -->
+
+    <NamedIndividual rdf:about="http://example.com/ns/foo#_:genid17"/>
+    
+
+
+    <!-- http://example.com/ns/foo#_:genid18 -->
+
+    <NamedIndividual rdf:about="http://example.com/ns/foo#_:genid18"/>
+    
+
+
+    <!-- http://example.com/ns/foo#_:genid19 -->
+
+    <NamedIndividual rdf:about="http://example.com/ns/foo#_:genid19"/>
+    
+
+
+    <!-- http://example.com/ns/foo#_:genid2 -->
+
+    <NamedIndividual rdf:about="http://example.com/ns/foo#_:genid2"/>
+    
+
+
+    <!-- http://example.com/ns/foo#_:genid20 -->
+
+    <NamedIndividual rdf:about="http://example.com/ns/foo#_:genid20"/>
+    
+
+
+    <!-- http://example.com/ns/foo#_:genid21 -->
+
+    <NamedIndividual rdf:about="http://example.com/ns/foo#_:genid21"/>
+    
+
+
+    <!-- http://example.com/ns/foo#_:genid22 -->
+
+    <NamedIndividual rdf:about="http://example.com/ns/foo#_:genid22"/>
+    
+
+
+    <!-- http://example.com/ns/foo#_:genid23 -->
+
+    <NamedIndividual rdf:about="http://example.com/ns/foo#_:genid23"/>
+    
+
+
+    <!-- http://example.com/ns/foo#_:genid24 -->
+
+    <NamedIndividual rdf:about="http://example.com/ns/foo#_:genid24"/>
+    
+
+
+    <!-- http://example.com/ns/foo#_:genid25 -->
+
+    <NamedIndividual rdf:about="http://example.com/ns/foo#_:genid25"/>
+    
+
+
+    <!-- http://example.com/ns/foo#_:genid26 -->
+
+    <NamedIndividual rdf:about="http://example.com/ns/foo#_:genid26"/>
+    
+
+
+    <!-- http://example.com/ns/foo#_:genid27 -->
+
+    <NamedIndividual rdf:about="http://example.com/ns/foo#_:genid27"/>
+    
+
+
+    <!-- http://example.com/ns/foo#_:genid28 -->
+
+    <NamedIndividual rdf:about="http://example.com/ns/foo#_:genid28"/>
+    
+
+
+    <!-- http://example.com/ns/foo#_:genid29 -->
+
+    <NamedIndividual rdf:about="http://example.com/ns/foo#_:genid29"/>
+    
+
+
+    <!-- http://example.com/ns/foo#_:genid3 -->
+
+    <NamedIndividual rdf:about="http://example.com/ns/foo#_:genid3"/>
+    
+
+
+    <!-- http://example.com/ns/foo#_:genid30 -->
+
+    <NamedIndividual rdf:about="http://example.com/ns/foo#_:genid30"/>
+    
+
+
+    <!-- http://example.com/ns/foo#_:genid31 -->
+
+    <NamedIndividual rdf:about="http://example.com/ns/foo#_:genid31"/>
+    
+
+
+    <!-- http://example.com/ns/foo#_:genid32 -->
+
+    <NamedIndividual rdf:about="http://example.com/ns/foo#_:genid32"/>
+    
+
+
+    <!-- http://example.com/ns/foo#_:genid4 -->
+
+    <NamedIndividual rdf:about="http://example.com/ns/foo#_:genid4"/>
+    
+
+
+    <!-- http://example.com/ns/foo#_:genid5 -->
+
+    <NamedIndividual rdf:about="http://example.com/ns/foo#_:genid5"/>
+    
+
+
+    <!-- http://example.com/ns/foo#_:genid6 -->
+
+    <NamedIndividual rdf:about="http://example.com/ns/foo#_:genid6"/>
+    
+
+
+    <!-- http://example.com/ns/foo#_:genid7 -->
+
+    <NamedIndividual rdf:about="http://example.com/ns/foo#_:genid7"/>
+    
+
+
+    <!-- http://example.com/ns/foo#_:genid8 -->
+
+    <NamedIndividual rdf:about="http://example.com/ns/foo#_:genid8"/>
+    
+
+
+    <!-- http://example.com/ns/foo#_:genid9 -->
+
+    <NamedIndividual rdf:about="http://example.com/ns/foo#_:genid9"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#Collection -->
+
+    <NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#Collection">
+        <skos2:changeNote rdf:resource="http://example.com/ns/foo#_:genid3"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#Concept -->
+
+    <NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#Concept">
+        <skos2:changeNote rdf:resource="http://example.com/ns/foo#_:genid1"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#ConceptScheme -->
+
+    <NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#ConceptScheme">
+        <skos2:changeNote rdf:resource="http://example.com/ns/foo#_:genid2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#OrderedCollection -->
+
+    <NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#OrderedCollection">
+        <skos2:changeNote rdf:resource="http://example.com/ns/foo#_:genid4"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#altLabel -->
+
+    <NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#altLabel">
+        <skos2:changeNote rdf:resource="http://example.com/ns/foo#_:genid9"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#broadMatch -->
+
+    <NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#broadMatch">
+        <skos2:changeNote rdf:resource="http://example.com/ns/foo#_:genid28"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#broader -->
+
+    <NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#broader">
+        <skos2:changeNote rdf:resource="http://example.com/ns/foo#_:genid20"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#broaderTransitive -->
+
+    <NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#broaderTransitive">
+        <skos2:changeNote rdf:resource="http://example.com/ns/foo#_:genid23"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#changeNote -->
+
+    <ObjectProperty rdf:about="http://www.w3.org/2008/05/skos#changeNote">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <skos2:changeNote rdf:resource="http://example.com/ns/foo#_:genid13"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#closeMatch -->
+
+    <NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#closeMatch">
+        <skos2:changeNote rdf:resource="http://example.com/ns/foo#_:genid32"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#definition -->
+
+    <NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#definition">
+        <skos2:changeNote rdf:resource="http://example.com/ns/foo#_:genid14"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#editorialNote -->
+
+    <NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#editorialNote">
+        <skos2:changeNote rdf:resource="http://example.com/ns/foo#_:genid15"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#exactMatch -->
+
+    <NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#exactMatch">
+        <skos2:changeNote rdf:resource="http://example.com/ns/foo#_:genid31"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#example -->
+
+    <NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#example">
+        <skos2:changeNote rdf:resource="http://example.com/ns/foo#_:genid16"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#hasTopConcept -->
+
+    <NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#hasTopConcept">
+        <skos2:changeNote rdf:resource="http://example.com/ns/foo#_:genid6"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#hiddenLabel -->
+
+    <NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#hiddenLabel">
+        <skos2:changeNote rdf:resource="http://example.com/ns/foo#_:genid10"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#historyNote -->
+
+    <NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#historyNote">
+        <skos2:changeNote rdf:resource="http://example.com/ns/foo#_:genid17"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#inScheme -->
+
+    <NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#inScheme">
+        <skos2:changeNote rdf:resource="http://example.com/ns/foo#_:genid5"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#mappingRelation -->
+
+    <NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#mappingRelation">
+        <skos2:changeNote rdf:resource="http://example.com/ns/foo#_:genid27"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#member -->
+
+    <NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#member">
+        <skos2:changeNote rdf:resource="http://example.com/ns/foo#_:genid25"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#memberList -->
+
+    <NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#memberList">
+        <skos2:changeNote rdf:resource="http://example.com/ns/foo#_:genid26"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#narrowMatch -->
+
+    <NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#narrowMatch">
+        <skos2:changeNote rdf:resource="http://example.com/ns/foo#_:genid29"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#narrower -->
+
+    <NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#narrower">
+        <skos2:changeNote rdf:resource="http://example.com/ns/foo#_:genid21"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#narrowerTransitive -->
+
+    <NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#narrowerTransitive">
+        <skos2:changeNote rdf:resource="http://example.com/ns/foo#_:genid24"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#notation -->
+
+    <NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#notation">
+        <skos2:changeNote rdf:resource="http://example.com/ns/foo#_:genid11"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#note -->
+
+    <NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#note">
+        <skos2:changeNote rdf:resource="http://example.com/ns/foo#_:genid12"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#prefLabel -->
+
+    <NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#prefLabel">
+        <skos2:changeNote rdf:resource="http://example.com/ns/foo#_:genid8"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#related -->
+
+    <NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#related">
+        <skos2:changeNote rdf:resource="http://example.com/ns/foo#_:genid22"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#relatedMatch -->
+
+    <NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#relatedMatch">
+        <skos2:changeNote rdf:resource="http://example.com/ns/foo#_:genid30"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#scopeNote -->
+
+    <NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#scopeNote">
+        <skos2:changeNote rdf:resource="http://example.com/ns/foo#_:genid18"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#semanticRelation -->
+
+    <NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#semanticRelation">
+        <skos2:changeNote rdf:resource="http://example.com/ns/foo#_:genid19"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#topConceptOf -->
+
+    <NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#topConceptOf">
+        <skos2:changeNote rdf:resource="http://example.com/ns/foo#_:genid7"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Biochip -->
+
+    <NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Biochip">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ApplicationOfScience"/>
+        <modsci:isApplicationOfScience rdf:resource="https://w3id.org/skgo/modsci#Studying_biochemical_reactions"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Biomedical_Signals -->
+
+    <NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Biomedical_Signals">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificDiscovery"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Biosensors -->
+
+    <NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Biosensors">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ApplicationOfScience"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Conservation_of_energy -->
+
+    <NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Conservation_of_energy">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#Phenomenon"/>
+        <modsci:discoveredByScientist rdf:resource="https://w3id.org/skgo/modsci#Julius_von_Mayer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Decision_Trees -->
+
+    <NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Decision_Trees">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ClassificationAlgorithms"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Deep_Learning -->
+
+    <NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Deep_Learning">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#Algorithms"/>
+        <modsci:InspiredFrom rdf:resource="https://w3id.org/skgo/modsci#Biomedical_Signals"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Genetic_algorithms -->
+
+    <NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Genetic_algorithms">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#Algorithms"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Guglielmo_Marconi -->
+
+    <NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Guglielmo_Marconi">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#Scientist"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Julius_von_Mayer -->
+
+    <NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Julius_von_Mayer">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#Scientist"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#KNN_Algorithm -->
+
+    <NamedIndividual rdf:about="https://w3id.org/skgo/modsci#KNN_Algorithm">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ClassificationAlgorithms"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Light_Bulb -->
+
+    <NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Light_Bulb">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificDiscovery"/>
+        <modsci:discoveredByScientist rdf:resource="https://w3id.org/skgo/modsci#Thomas_Edison"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Linear_Regression -->
+
+    <NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Linear_Regression">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#Statistics"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Olaus_Roemer -->
+
+    <NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Olaus_Roemer">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#Scientist"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#PsychiatricDrugs -->
+
+    <NamedIndividual rdf:about="https://w3id.org/skgo/modsci#PsychiatricDrugs">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ApplicationOfScience"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Radio_Signals -->
+
+    <NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Radio_Signals">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#Phenomenon"/>
+        <modsci:discoveredByScientist rdf:resource="https://w3id.org/skgo/modsci#Guglielmo_Marconi"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Resampling_Methods -->
+
+    <NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Resampling_Methods">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#Statistics"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Shrinkage -->
+
+    <NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Shrinkage">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#Statistics"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Speed_of_light -->
+
+    <NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Speed_of_light">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificDiscovery"/>
+        <modsci:discoveredByScientist rdf:resource="https://w3id.org/skgo/modsci#Olaus_Roemer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Studying_biochemical_reactions -->
+
+    <NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Studying_biochemical_reactions">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#MolecularBiology"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Subset_Selection -->
+
+    <NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Subset_Selection">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#Statistics"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Support_Vector_Machines -->
+
+    <NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Support_Vector_Machines">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ClassificationAlgorithms"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Thermometer -->
+
+    <NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Thermometer">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+        <modsci:InstrumentusedInScience rdf:resource="https://w3id.org/skgo/modsci#Studying_biochemical_reactions"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Thomas_Edison -->
+
+    <NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Thomas_Edison">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#Scientist"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#study_of_wetlands -->
+
+    <NamedIndividual rdf:about="https://w3id.org/skgo/modsci#study_of_wetlands">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#Ecology"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#temperature_gradient -->
+
+    <NamedIndividual rdf:about="https://w3id.org/skgo/modsci#temperature_gradient">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#PhysicalPhenomena"/>
+    </NamedIndividual>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -824,110 +3020,37 @@
      -->
 
     <Restriction>
-        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Image"/>
-        <onProperty rdf:resource="http://xmlns.com/foaf/0.1/depicts"/>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <onProperty rdf:resource="http://xmlns.com/foaf/0.1/icqChatID"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Restriction>
+    <Restriction>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <onProperty rdf:resource="http://xmlns.com/foaf/0.1/yahooChatID"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Restriction>
+    <Restriction>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <onProperty rdf:resource="http://xmlns.com/foaf/0.1/mbox"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Restriction>
+    <Restriction>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <onProperty rdf:resource="http://xmlns.com/foaf/0.1/made"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Restriction>
+    <Restriction>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <onProperty rdf:resource="http://xmlns.com/foaf/0.1/openid"/>
         <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     </Restriction>
     <Class>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
         <intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Document"/>
-            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+            <rdf:Description rdf:about="https://w3id.org/skgo/modsci#NaturalPhenomenon"/>
+            <rdf:Description rdf:about="https://w3id.org/skgo/modsci#SocialPhenomenon"/>
         </intersectionOf>
     </Class>
-    <Restriction>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Algorithms"/>
-        <onProperty rdf:resource="https://w3id.org/skgo/modsci#InspiredFrom"/>
-        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </Restriction>
-    <Class>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
-        <intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.w3.org/2008/05/skos#Concept"/>
-            <rdf:Description rdf:about="http://www.w3.org/2008/05/skos#ConceptScheme"/>
-        </intersectionOf>
-    </Class>
-    <Restriction>
-        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
-        <onProperty rdf:resource="http://xmlns.com/foaf/0.1/primaryTopic"/>
-        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </Restriction>
-    <Class>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
-        <intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Document"/>
-            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Project"/>
-        </intersectionOf>
-    </Class>
-    <Restriction>
-        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-        <onProperty rdf:resource="http://xmlns.com/foaf/0.1/workInfoHomepage"/>
-        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </Restriction>
-    <Restriction>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2008/05/skos#Concept"/>
-        <onProperty rdf:resource="http://www.w3.org/2008/05/skos#topConceptOf"/>
-        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </Restriction>
-    <Class>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
-        <intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.w3.org/2008/05/skos#Collection"/>
-            <rdf:Description rdf:about="http://www.w3.org/2008/05/skos#ConceptScheme"/>
-        </intersectionOf>
-    </Class>
-    <Restriction>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
-        <onProperty rdf:resource="http://xmlns.com/foaf/0.1/based_near"/>
-        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </Restriction>
-    <Restriction>
-        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Group"/>
-        <onProperty rdf:resource="http://xmlns.com/foaf/0.1/member"/>
-        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </Restriction>
-    <Restriction>
-        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Image"/>
-        <onProperty rdf:resource="http://xmlns.com/foaf/0.1/thumbnail"/>
-        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </Restriction>
-    <Restriction>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2008/05/skos#OrderedCollection"/>
-        <onProperty rdf:resource="http://www.w3.org/2008/05/skos#memberList"/>
-        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </Restriction>
-    <Class>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
-        <intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
-            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person"/>
-        </intersectionOf>
-    </Class>
-    <Restriction>
-        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-        <onProperty rdf:resource="http://xmlns.com/foaf/0.1/img"/>
-        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </Restriction>
-    <Restriction>
-        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-        <onProperty rdf:resource="http://xmlns.com/foaf/0.1/pastProject"/>
-        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </Restriction>
-    <Restriction>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2008/05/skos#Collection"/>
-        <onProperty rdf:resource="http://www.w3.org/2008/05/skos#member"/>
-        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </Restriction>
-    <Restriction>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2008/05/skos#Concept"/>
-        <onProperty rdf:resource="http://www.w3.org/2008/05/skos#semanticRelation"/>
-        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </Restriction>
-    <Restriction>
-        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-        <onProperty rdf:resource="http://xmlns.com/foaf/0.1/knows"/>
-        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </Restriction>
     <Restriction>
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
         <onProperty rdf:resource="http://xmlns.com/foaf/0.1/schoolHomepage"/>
@@ -938,9 +3061,53 @@
         <onProperty rdf:resource="http://xmlns.com/foaf/0.1/currentProject"/>
         <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     </Restriction>
+    <Class>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.w3.org/2008/05/skos#Collection"/>
+            <rdf:Description rdf:about="http://www.w3.org/2008/05/skos#ConceptScheme"/>
+        </intersectionOf>
+    </Class>
     <Restriction>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
-        <onProperty rdf:resource="http://www.w3.org/2008/05/skos#hasTopConcept"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2008/05/skos#Collection"/>
+        <onProperty rdf:resource="http://www.w3.org/2008/05/skos#member"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Restriction>
+    <Restriction>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+        <onProperty rdf:resource="https://w3id.org/skgo/modsci#hasCloseRelationshipTo"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Restriction>
+    <Restriction>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Scientist"/>
+        <onProperty rdf:resource="https://w3id.org/skgo/modsci#InterestedInStudyingPhenomenon"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Restriction>
+    <Restriction>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <onProperty rdf:resource="http://xmlns.com/foaf/0.1/focus"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Restriction>
+    <Restriction>
+        <rdfs:subClassOf>
+            <Class>
+                <unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/skgo/modsci#Phenomenon"/>
+                    <rdf:Description rdf:about="https://w3id.org/skgo/modsci#ScientificDiscovery"/>
+                </unionOf>
+            </Class>
+        </rdfs:subClassOf>
+        <onProperty rdf:resource="https://w3id.org/skgo/modsci#discoveredByScience"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Restriction>
+    <Restriction>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <onProperty rdf:resource="http://xmlns.com/foaf/0.1/pastProject"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Restriction>
+    <Restriction>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <onProperty rdf:resource="http://xmlns.com/foaf/0.1/weblog"/>
         <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     </Restriction>
     <Restriction>
@@ -949,15 +3116,73 @@
         <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     </Restriction>
     <Restriction>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2008/05/skos#Concept"/>
-        <onProperty rdf:resource="http://www.w3.org/2008/05/skos#mappingRelation"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+        <onProperty rdf:resource="https://w3id.org/skgo/modsci#suppliesSubstancesTo"/>
         <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     </Restriction>
     <Restriction>
-        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/OnlineAccount"/>
-        <onProperty rdf:resource="http://xmlns.com/foaf/0.1/accountServiceHomepage"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+        <onProperty rdf:resource="https://w3id.org/skgo/modsci#hasApplications"/>
         <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     </Restriction>
+    <Restriction>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+        <onProperty rdf:resource="https://w3id.org/skgo/modsci#hasCollaborationWith"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Restriction>
+    <Restriction>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <onProperty rdf:resource="http://xmlns.com/foaf/0.1/workInfoHomepage"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Restriction>
+    <Class>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Document"/>
+            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Project"/>
+        </intersectionOf>
+    </Class>
+    <Restriction>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <onProperty rdf:resource="http://xmlns.com/foaf/0.1/tipjar"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Restriction>
+    <Restriction>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ApplicationOfScience"/>
+        <onProperty rdf:resource="https://w3id.org/skgo/modsci#isApplicationOfScience"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Restriction>
+    <Restriction>
+        <rdfs:subClassOf>
+            <Class>
+                <unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/skgo/modsci#Phenomenon"/>
+                    <rdf:Description rdf:about="https://w3id.org/skgo/modsci#ScientificDiscovery"/>
+                </unionOf>
+            </Class>
+        </rdfs:subClassOf>
+        <onProperty rdf:resource="https://w3id.org/skgo/modsci#discoveredByScientist"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Restriction>
+    <Class>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+        </intersectionOf>
+    </Class>
+    <Restriction>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+        <onProperty rdf:resource="https://w3id.org/skgo/modsci#usesTechniquesFrom"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Restriction>
+    <Class>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Project"/>
+        </intersectionOf>
+    </Class>
     <Class>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
         <intersectionOf rdf:parseType="Collection">
@@ -968,28 +3193,38 @@
     <Class>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
         <intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person"/>
-            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Project"/>
+            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Document"/>
+            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
         </intersectionOf>
     </Class>
     <Restriction>
-        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-        <onProperty rdf:resource="https://w3id.org/skgo/modsci#InterestedInStudyingPhenomenon"/>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Image"/>
+        <onProperty rdf:resource="http://xmlns.com/foaf/0.1/depicts"/>
         <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     </Restriction>
     <Restriction>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ApplicationOfScience"/>
-        <onProperty rdf:resource="https://w3id.org/skgo/modsci#isApplicationOfScience"/>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <onProperty rdf:resource="http://xmlns.com/foaf/0.1/holdsAccount"/>
         <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     </Restriction>
     <Restriction>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <onProperty rdf:resource="http://xmlns.com/foaf/0.1/focus"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+        <onProperty rdf:resource="https://w3id.org/skgo/modsci#takeSunstancesFrom"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Restriction>
+    <Restriction>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <onProperty rdf:resource="http://xmlns.com/foaf/0.1/aimChatID"/>
         <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     </Restriction>
     <Restriction>
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
-        <onProperty rdf:resource="http://xmlns.com/foaf/0.1/topic"/>
+        <onProperty rdf:resource="http://xmlns.com/foaf/0.1/primaryTopic"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Restriction>
+    <Restriction>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2008/05/skos#OrderedCollection"/>
+        <onProperty rdf:resource="http://www.w3.org/2008/05/skos#memberList"/>
         <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     </Restriction>
     <Restriction>
@@ -998,8 +3233,139 @@
         <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     </Restriction>
     <Restriction>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <onProperty rdf:resource="http://xmlns.com/foaf/0.1/account"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Restriction>
+    <Restriction>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2008/05/skos#Concept"/>
+        <onProperty rdf:resource="http://www.w3.org/2008/05/skos#semanticRelation"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Restriction>
+    <Restriction>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Group"/>
+        <onProperty rdf:resource="http://xmlns.com/foaf/0.1/member"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Restriction>
+    <Class>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.w3.org/2008/05/skos#Concept"/>
+            <rdf:Description rdf:about="http://www.w3.org/2008/05/skos#ConceptScheme"/>
+        </intersectionOf>
+    </Class>
+    <Restriction>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2008/05/skos#Concept"/>
+        <onProperty rdf:resource="http://www.w3.org/2008/05/skos#topConceptOf"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Restriction>
+    <Restriction>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Algorithms"/>
+        <onProperty rdf:resource="https://w3id.org/skgo/modsci#InspiredFrom"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Restriction>
+    <Restriction>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <onProperty rdf:resource="http://xmlns.com/foaf/0.1/jabberID"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Restriction>
+    <Restriction>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
+        <onProperty rdf:resource="http://www.w3.org/2008/05/skos#hasTopConcept"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Restriction>
+    <Restriction>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+        <onProperty rdf:resource="https://w3id.org/skgo/modsci#hasMethodsInspiredFrom"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Restriction>
+    <Restriction>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+        <onProperty rdf:resource="http://xmlns.com/foaf/0.1/topic"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Restriction>
+    <Restriction>
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
         <onProperty rdf:resource="http://xmlns.com/foaf/0.1/publications"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Restriction>
+    <Restriction>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <onProperty rdf:resource="http://xmlns.com/foaf/0.1/knows"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Restriction>
+    <Restriction>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+        <onProperty rdf:resource="https://w3id.org/skgo/modsci#appliesLawsFrom"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Restriction>
+    <Restriction>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <onProperty rdf:resource="http://xmlns.com/foaf/0.1/mbox_sha1sum"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Restriction>
+    <Restriction>
+        <rdfs:subClassOf>
+            <Class>
+                <unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/skgo/modsci#Phenomenon"/>
+                    <rdf:Description rdf:about="https://w3id.org/skgo/modsci#ScientificDiscovery"/>
+                </unionOf>
+            </Class>
+        </rdfs:subClassOf>
+        <onProperty rdf:resource="https://w3id.org/skgo/modsci#isDiscoverdBy"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Restriction>
+    <Restriction>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+        <onProperty rdf:resource="http://xmlns.com/foaf/0.1/accountServiceHomepage"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Restriction>
+    <Restriction>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <onProperty rdf:resource="http://xmlns.com/foaf/0.1/interest"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Restriction>
+    <Restriction>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <onProperty rdf:resource="http://xmlns.com/foaf/0.1/img"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Restriction>
+    <Restriction>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2008/05/skos#Concept"/>
+        <onProperty rdf:resource="http://www.w3.org/2008/05/skos#mappingRelation"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Restriction>
+    <Restriction>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <onProperty rdf:resource="http://xmlns.com/foaf/0.1/msnChatID"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Restriction>
+    <Restriction>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <onProperty rdf:resource="http://xmlns.com/foaf/0.1/topic_interest"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Restriction>
+    <Restriction>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+        <onProperty rdf:resource="http://xmlns.com/foaf/0.1/based_near"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Restriction>
+    <Restriction>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Image"/>
+        <onProperty rdf:resource="http://xmlns.com/foaf/0.1/thumbnail"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Restriction>
+    <Restriction>
+        <rdfs:subClassOf>
+            <Class>
+                <unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/skgo/modsci#Astrometry"/>
+                    <rdf:Description rdf:about="https://w3id.org/skgo/modsci#ModernScience"/>
+                </unionOf>
+            </Class>
+        </rdfs:subClassOf>
+        <onProperty rdf:resource="https://w3id.org/skgo/modsci#usesMethodsFrom"/>
         <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     </Restriction>
 </rdf:RDF>
