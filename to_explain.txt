@@ -1,0 +1,2 @@
+http://bioportal.bioontology.org/ontologies/FISHO#FISHO_0000125
+http://bioportal.bioontology.org/ontologies/FISHO#FISHO_0000253

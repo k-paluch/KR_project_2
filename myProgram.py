@@ -1,102 +1,116 @@
 import os
 from random import randint, seed,shuffle
 import time
+from timeit import default_timer
+import argparse
+import csv
 
-def saveclasses(file):
-	tmp = {}
-	elements = []
+parser = argparse.ArgumentParser(description='choose heuristic')
+
+parser.add_argument('-S1', '--heur1', help='no_heur', action = "store_true")
+parser.add_argument('-S2', '--heur2', help='heur1', action = "store_true")
+parser.add_argument('-S3', '--heur3', help='heur3', action = "store_true")
+parser.add_argument('-S4', '--heur4', help='heur3', action = "store_true")
+parser.add_argument('-S5', '--heur5', help='heur4', action = "store_true")
+parser.add_argument('-M1', '--method1', help='method1', action = "store_true")
+parser.add_argument('-M2', '--method2', help='method2', action = "store_true")
+parser.add_argument('-M3', '--method3', help='method3', action = "store_true")
+parser.add_argument('data', type=str, help='data')
+argc = parser.parse_args()
+
+seed(1)
+
+def no_heur(file):
+	symbols = []
 	with open(file, "r") as file:
 		for line in file:
 			words = line.split()
-			if(words[0][1:-1] not in elements):
+			if(words[0][1:-1] not in symbols):
+				symbols.append(words[0][1:-1])
+			if(words[2][1:-1] not in symbols):
+				symbols.append(words[2][1:-1])
+	return symbols
+
+def heur1(file):
+	tmp = {}
+	symbols = []
+	with open(file, "r") as file:
+		for line in file:
+			words = line.split()
+			if(words[0][1:-1] not in symbols):
 				tmp.update({words[0][1:-1]: 1})
-				elements.append(words[0][1:-1])
+				symbols.append(words[0][1:-1])
 			else:
 				tmp.update({words[0][1:-1]: tmp[words[0][1:-1]]+1})
-			if(words[2][1:-1] not in elements):
+			if(words[2][1:-1] not in symbols):
 				tmp.update({words[2][1:-1]: 1})
-				elements.append(words[2][1:-1])
+				symbols.append(words[2][1:-1])
 			else:
 				tmp.update({words[2][1:-1]: tmp[words[2][1:-1]]+1})
-	return tmp, elements
 
-seed(1)
-# This is an example puython programme which shows how to use the different stand-alone versions of OWL reasoners and forgetting programme
+	tmp = sorted(tmp.items(), key=lambda kv: kv[1])
+	heur1 = []
+	for x in tmp:
+		heur1.append(x[0])
 
-# Choose the ontology (in the OWL format) for which you want to explain the entailed subsumption relations.
-inputOntology = "./ModSci.owl"
+	return heur1
 
-# Choose the set of subclass for which you want to find an explanation.
-# this file can be generated using the second command (saveAllSubClasses)
+def heur2(file):
+	return shuffle(no_heur(file))
+
+def heur3(file):
+	return heur1(file)[::-1]
+
+def heur4(file):
+	# adjust this function
+	# 
+	# 
+	# 
+	# 
+	# 
+	# 
+	return heur1(file)[::-1]
+
+inputOntology = argc.data
 inputSubclassStatements = "./subClasses.nt"
-
-# Choose the ontology to which you want to apply forgetting. This can be the inputOntology, but in practise
-# should be a smaller ontology, e.g. created as a justification for a subsumption
 forgetOntology = "./result.owl"
-
-# Decide on a method for the forgetter (check the papers of LETHE to understand the different options).
-# The default is 1, I believe.
+signature = "./signature.txt"
 # 1 - ALCHTBoxForgetter
 # 2 - SHQTBoxForgetter
 # 3 - ALCOntologyForgetter
+if(argc.method1):
+	method = "1" #
+elif(argc.method2):
+	method = "2" #
+else:
+	method = "3"
 
-method = "3" #
-
-# Choose the symbols which you want to forget.
-signature = "./signature.txt"
-
-# 1. PRINT ALL SUBCLASSES (inputOntology):
-# print all subClass statements (explicit and inferred) in the inputOntology
-# --> uncomment the following line to run this function
-#os.system('java -jar kr_functions.jar ' + 'printAllSubClasses' + " " + inputOntology)
-
-# 2. SAVE ALL SUBCLASSES (inputOntology):
-# save all subClass statements (explicit and inferred) in the inputOntology to file datasets/subClasses.nt
-# --> uncomment the following line to run this function
 os.system('java -jar kr_functions.jar ' + 'saveAllSubClasses' + " " + inputOntology)
 
-# 3. PRINT ALL EXPLANATIONS (inputOntology, inputSubclassStatements):
-# print explanations for each subClass statement in the inputSubclassStatements
-# --> uncomment the following line to run this function
-#os.system('java -jar kr_functions.jar ' + 'printAllExplanations' + " " + inputOntology + " " + inputSubclassStatements)
+if(argc.heur1):
+	symbols = no_heur('subClasses.nt')
+elif(argc.heur2):
+	symbols = heur1('subClasses.nt')
+elif(argc.heur3):
+	symbols = heur2('subClasses.nt')
+elif(argc.heur4):
+	symbols = heur3('subClasses.nt')
+else:
+	symbols = heur4('subClasses.nt')
 
-# 4. SAVE ALL EXPLANATIONS (inputOntology, inputSubclassStatements):
-# save explanations for each subClass statement in the inputSubclassStatements to file datasets/exp-#.owl
-# --> uncomment the following line to run this function
-# os.system('java -jar kr_functions.jar ' + 'saveAllExplanations' + " " + inputOntology + " " + inputSubclassStatements)
+to_explain = []
+with open('to_explain.txt', "r") as f:
+	to_explain = f.read().splitlines() 
 
-# For running LETHE forget command:
-# --> uncomment the following line to run this function
-# os.system('java -cp lethe-standalone.jar uk.ac.man.cs.lethe.internal.application.ForgettingConsoleApplication --owlFile ' + inputOntology + ' --method ' + method  + ' --signature ' + signature)
-
-
-
-classes = saveclasses('subClasses.nt')
-tmp = classes[0]
-elements = classes[1]
-
-tmp = sorted(tmp.items(), key=lambda kv: kv[1])
-heur1 = []
-for x in tmp:
-	heur1.append(x[0])
-# t = [k  for  k in  heur1.keys()]
-heur2 = shuffle(elements)
-
-# set heuristic
-elements = heur1
-
-to_forget = []
-
-for x in reversed(elements):
-	if(x!='https://w3id.org/skgo/modsci#NaturalLanguageProcessing' and x!= 'https://w3id.org/skgo/modsci#ModernScience'):
-		to_forget.append(x)
-		elements.pop(elements.index(x))
+for x in to_explain:
+	symbols.pop(symbols.index(x))
 
 first = 0
-
 n = 0
 
-for t in to_forget:
+start = default_timer()
+
+for t in symbols:
 	with open("signature.txt", "w") as f:
 		f.write(t)
 	if(first == 0):
@@ -108,3 +122,25 @@ for t in to_forget:
 
 os.system('java -jar kr_functions.jar ' + 'saveAllSubClasses' + " " + forgetOntology)
 os.system('java -jar kr_functions.jar ' + 'saveAllExplanations' + " " + forgetOntology + " " + inputSubclassStatements)
+runtime = default_timer() - start
+
+with open(f'statistics.csv', mode='a', newline='') as statistics:
+		statistics = csv.writer(statistics, delimiter=',')
+		if(argc.heur1):
+			heuristic = '0'
+		elif(argc.heur2):
+			heuristic = '1'
+		elif(argc.heur3):
+			heuristic = '2'
+		elif(argc.heur4):
+			heuristic = '3'
+		else:
+			heuristic = '4'
+
+		if(argc.method1):
+			type = 'ALCHTBoxForgetter'
+		elif(argc.method2):
+			type = 'SHQTBoxForgetter'
+		elif(argc.method3):
+			type = 'ALCOntologyForgetter'
+		statistics.writerow([type, heuristic, argc.data, 'x', runtime])

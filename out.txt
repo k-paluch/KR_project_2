@@ -1,0 +1,60 @@
+Starting Program...
+--------------------
+Loading ontology located at: ./pizza_super_simple.owl
+DONE! Loading ontology located at: ./pizza_super_simple.owl
+Format : RDF/XML Syntax
+--------
+
+
+Saving all subClassOf statements to following file: /mnt/c/Users/Paluc/Desktop/s/git/KR_project_2/./subClasses.nt
+
+
+DONE! Saving all subClassOf statements to following file: /mnt/c/Users/Paluc/Desktop/s/git/KR_project_2/./subClasses.nt
+--------
+
+
+Parsing ./pizza_super_simple.owl...
+Simple: 33.78%, EL: 74.32%, ALC: 82.43%, ALCI: 82.43%, SHQ: 82.43%, axioms: 91, TBox: 74, RBox: 5, ABox: 12 Signature: 106
+converting...Traceback (most recent call last):
+  File "statistics.py", line 18, in <module>
+    c= subprocess.call(["python3", "myProgram.py", h, t, r[1]])
+  File "/usr/lib/python3.8/subprocess.py", line 342, in call
+    return p.wait(timeout=timeout)
+  File "/usr/lib/python3.8/subprocess.py", line 1079, in wait
+    return self._wait(timeout=timeout)
+  File "/usr/lib/python3.8/subprocess.py", line 1804, in _wait
+    (pid, sts) = self._try_wait(0)
+  File "/usr/lib/python3.8/subprocess.py", line 1762, in _try_wait
+    (pid, sts) = os.waitpid(self.pid, wait_flags)
+KeyboardInterrupt
+Parsing ./result.owl...
+Simple: 80.57%, EL: 84.00%, ALC: 100.00%, ALCI: 100.00%, SHQ: 100.00%, axioms: 361, TBox: 350, RBox: 0, ABox: 11 Signature: 76
+converting...
+Using method 1 (uk.ac.man.cs.lethe.internal.dl.forgetting.ConceptAndRoleForgetter$)
+Using signature file ./signature.txt
+Using forgetter uk.ac.man.cs.lethe.internal.dl.forgetting.ConceptAndRoleForgetter$@7d3d101b
+
+Input Number of Axioms: 361
+Input Average Axiom size: 17.240997229916896
+Input Definers: 0
+Input Number Restrictions: 0
+
+
+ The following symbols will be forgotten:
+http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetarianTopping
+
+
+Forgetting...
+Started at Wed Oct 14 15:49:26 CEST 2020
+
+ |                                                | 0/1 (0.00%)                                                                  |================================================| 1/1 (100.00%) VegetarianTopping
+
+Finished at Wed Oct 14 15:50:00 CEST 2020
+Duration: 33730
+
+Result Number of Axioms: 333
+Result Average Axiom size: 19.765765765765767
+Result Definers: 0
+Result Number Restrictions: 0
+
+Exporting to result.owl...
