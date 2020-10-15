@@ -1,5 +1,5 @@
 import os
-from random import randint, seed,shuffle
+from random import randint, seed, sample
 import time
 from timeit import default_timer
 import argparse
@@ -56,20 +56,36 @@ def heur1(file):
 	return heur1
 
 def heur2(file):
-	return shuffle(no_heur(file))
+	tmp = no_heur(file)
+	return sample(tmp,len(tmp))
 
 def heur3(file):
 	return heur1(file)[::-1]
 
 def heur4(file):
-	# adjust this function
-	# 
-	# 
-	# 
-	# 
-	# 
-	# 
-	return heur1(file)[::-1]
+	h=0
+	l=0
+	tmp ={}
+	with open(argc.data, "r") as file:
+		for line in file:
+			words = line.split()
+			if(len(words)>0):
+				if(words[0]=='</owl:Class>'):
+					tmp.update({e:l})
+					l=0
+				if(words[0]=='<owl:Class'):
+					e = words[1][11:-2]
+					h=1
+				if(h==1):
+					if(words[0] == '<owl:intersectionOf' or words[0] == '<owl:Restriction>'):
+						l+=100
+					else:
+						l+=1
+	tmp = sorted(tmp.items(), key=lambda kv: kv[1])
+	heur5 = []
+	for x in tmp:
+		heur5.append(x[0])
+	return heur5
 
 inputOntology = argc.data
 inputSubclassStatements = "./subClasses.nt"
@@ -110,15 +126,16 @@ n = 0
 
 start = default_timer()
 
-for t in symbols:
-	with open("signature.txt", "w") as f:
-		f.write(t)
-	if(first == 0):
-		os.system('java -cp lethe-standalone.jar uk.ac.man.cs.lethe.internal.application.ForgettingConsoleApplication --owlFile ' + inputOntology + ' --method ' + method  + ' --signature ' + signature)
-		first+=1
-	else:
-		os.system('java -cp lethe-standalone.jar uk.ac.man.cs.lethe.internal.application.ForgettingConsoleApplication --owlFile ' + forgetOntology + ' --method ' + method  + ' --signature ' + signature)
-	n+=1
+
+with open("signature.txt", "w") as f:
+	for t in symbols:
+		f.write(f'{t}\n')
+	# if(first == 0):
+os.system('java -cp lethe-standalone.jar uk.ac.man.cs.lethe.internal.application.ForgettingConsoleApplication --owlFile ' + inputOntology + ' --method ' + method  + ' --signature ' + signature)
+		# first+=1
+	# else:
+	# 	os.system('java -cp lethe-standalone.jar uk.ac.man.cs.lethe.internal.application.ForgettingConsoleApplication --owlFile ' + forgetOntology + ' --method ' + method  + ' --signature ' + signature)
+	# n+=1
 
 os.system('java -jar kr_functions.jar ' + 'saveAllSubClasses' + " " + forgetOntology)
 os.system('java -jar kr_functions.jar ' + 'saveAllExplanations' + " " + forgetOntology + " " + inputSubclassStatements)

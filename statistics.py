@@ -2,7 +2,7 @@ import subprocess
 import csv
 
 types = ["-M1","-M2","-M3"]
-heurs = ["-S1","-S2","-S3","-S4","-S5"]
+heurs = ["-S2","-S3","-S4","-S5"]
 to_reads = [
 ['http://bioportal.bioontology.org/ontologies/FISHO#FISHO_0000125\nhttp://bioportal.bioontology.org/ontologies/FISHO#FISHO_0000253','./FishOntology.owl'],
 ['http://bioportal.bioontology.org/ontologies/FISHO#FISHO_0000446\nhttp://bioportal.bioontology.org/ontologies/FISHO#FISHO_0000127','./FishOntology.owl'],
